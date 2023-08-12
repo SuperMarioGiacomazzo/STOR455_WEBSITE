@@ -76,12 +76,17 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
     - **[Syllabi](Syllabi/STOR 455 Section 2 Syllabus.pdf)**
     - Schedule: TTh, 2:00PM - 3:15PM
     - Location: Gardner 105
+    - **[Canvas](https://uncch.instructure.com/login/saml)**
 
 - Office Hours:
     - Dr. Mario: W, 9AM - 11AM & 12PM - 2PM, Hanes 134
     - Coleman: TBD
     
+- Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
+
 - University Approved Absences: **[Online Form](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**
+
+- Textbook: **[STAT2: Modeling with Regression and ANOVA](https://www.amazon.com/STAT2-Modeling-Regression-Ann-Cannon/dp/1319054072)**
 
   </div>
   <div class="column">
@@ -93,7 +98,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 # **Course Material**
 
 | Date | Lecture | Slides | Supplement | Reading |
-|------|---------|--------:|---------:|---------:|
+|:------:|:------:|:------:|:------:|:------:|
 | Aug 22     |         |         |          |          |
 | Aug 24     |         |         |          |          |
 | Aug 29     |         |         |          |          |
@@ -127,23 +132,23 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Dec 5   |       |         |          |          |
 |   |     |             |  | |    |    
 
+# **Homework/Quiz Tracker**
 
-# **Reading**
+Homeworks and Quizzes are sorted by the date assigned below. You can download the homework assignments in zipped folders using the links below. For the homework assignments, unzip the folder, open the RMD file, complete the assignment, knit to PDF, and submit PDF to Gradescope. For the quizzes, you will go to Canvas, and enter the access code given to you during class. The quiz must be completed by the end of class and the amount of time you have will vary based off the length of the quiz. 
 
-- **[R for Data Science](R for Data Science- Import, Tidy, Transform, Visualize, and Model Data.pdf)** (R4DS)
-
-- R Programming for Data Science (RP4DS)
-
-- The Art of R Programming (AoRP)
-
-- A First Course in Statistical Programming with R (FCSPR)
-
-- **[ModernDive](https://moderndive.com/index.html)** (MD)
-
-- **[An Introduction to Statistical Learning](An Introduction to Statistical Learning.pdf)** (ISLR)
-
+| Assigned | HW (HW) | Quiz (Q) | Due Date (Time) |
+|:------:|:--------:|:--------:|:------:|
+| Aug 22  | HW1 |  | Aug 24 (2 PM) |
+| Aug 24  | HW2 |  | Aug 31 (2 PM) |
+| Aug 29  |  | Q1  | Aug 29 (3:15 PM) |
+| Aug 31  | HW3 |  | Sep 7 (2 PM) |
+| Sep 7  | HW4 |  | Sep 14 (2 PM) |
+| Sep 12 |  | Q2  | Sep 12 (3:15 PM) |
+| |     |             |  |
 
 # **Additional resources**
+
+- **[UNC Check-in App](https://unccheckin.unc.edu/#studentFAQ)**
 
 - **[Installing R](https://cran.r-project.org/)**
 
