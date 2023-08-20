@@ -73,14 +73,14 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 - Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
 - Course Information
-    - **[Syllabi](Syllabi/STOR 455 Section 2 Syllabus.pdf)**
+    - **[Syllabus](Syllabus/STOR 455 Section 2 Syllabus.pdf)**
     - Schedule: TTh, 2:00PM - 3:15PM
     - Location: Gardner 105
     - **[Canvas](https://uncch.instructure.com/login/saml)**
 
 - Office Hours:
     - Dr. Mario: W, 9AM - 11AM & 12PM - 2PM, Hanes 134
-    - Coleman: TBD
+    - Coleman: M, 12PM - 3PM, Hanes B-TBD
     
 - Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
 
@@ -94,12 +94,21 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
   </div>
 </div> 
 
+# **Complete Before First Day of Class**
+- Bookmark this **[course website](https://supermariogiacomazzo.github.io/STOR455_WEBSITE/)** in your browser
+- Get familiar with the course website and Canvas
+- Login to Gradescope through Canvas
+- View the syllabus using the hyperlink on the course website
+- Download the **[UNC Check-in App](https://unccheckin.unc.edu/#studentFAQ)** on your Mobile Phone
+- Install **[R](https://cran.r-project.org/)** and **[R Studio](https://www.rstudio.com/products/rstudio/#Desktop)** to your laptop
+- Read the first chapter of your textbook
+- Bring your laptop and mobile phone to class
 
 # **Course Material**
 
-| Date | Lecture | Slides | Supplement | Reading |
+| Date | Lecture | Supplement| Reading | Suggested Exercises |
 |:------:|:------:|:------:|:------:|:------:|
-| Aug 22     |         |         |          |          |
+| Aug 22     | [Modeling Basics/ Intro to R](Lectures/1 - Model Basics and Intro to R.pdf) |          |          |          |
 | Aug 24     |         |         |          |          |
 | Aug 29     |         |         |          |          |
 | Aug 31    |         |         |          |          |
@@ -138,11 +147,11 @@ Homeworks and Quizzes are sorted by the date assigned below. You can download th
 
 | Assigned | HW (HW) | Quiz (Q) | Due Date (Time) |
 |:------:|:--------:|:--------:|:------:|
-| Aug 22  | HW1 |  | Aug 24 (2 PM) |
-| Aug 24  | HW2 |  | Aug 31 (2 PM) |
+| Aug 22  | HW1 |  | Aug 25 (5 PM) |
+| Aug 25  | HW2 |  | Sep 1 (5 PM) |
 | Aug 29  |  | Q1  | Aug 29 (3:15 PM) |
-| Aug 31  | HW3 |  | Sep 7 (2 PM) |
-| Sep 7  | HW4 |  | Sep 14 (2 PM) |
+| Sep 1  | HW3 |  | Sep 8 (5 PM) |
+| Sep 8  | HW4 |  | Sep 15 (2 PM) |
 | Sep 12 |  | Q2  | Sep 12 (3:15 PM) |
 | |     |             |  |
 

@@ -1,0 +1,68 @@
+---
+title: "Class 1 R Notebook"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+```{r, echo=F}
+# Put all Required Packages Here
+library(readr)
+```
+
+# Read in Dataset
+
+```{r}
+# loads a package needed to use the read_csv() function
+# install package before first using it for the first time
+
+lego <- read_csv("lego.csv")
+
+# Alternative way to load lego (remove # to use)
+# You can load a csv file directly from internet (i.e. Github)
+# lego <- read_csv("https://raw.githubusercontent.com/JA-McLean/STOR455/master/data/lego.csv")
+```
+
+# Preview Dataset
+
+```{r}
+head(lego) #Vertically (Top 6 Rows by Default)
+str(lego)  #Horizontally
+```
+
+# Summary of Amazon Price
+
+### Numerically
+
+```{r}
+#dataframe$variable
+
+mean(lego$Amazon_Price,na.rm=T)
+median(lego$Amazon_Price,na.rm=T)
+sd(lego$Amazon_Price, na.rm=T)
+```
+
+### Visually
+
+Example of how to add a summary to R Code. You can write paragraphs outside the code chunks like this. For example, I may want to tell my audience that the visual below shows a histogram and boxplot of the Amazon price of lego sets, and we can clearly see that the distribution is extremely right-skewed.
+
+```{r}
+hist(lego$Amazon_Price, breaks=100) #Use Help to Find Out How to Change # of Bins
+boxplot(lego$Amazon_Price)
+```
+
+
+# Creating Objects and Doing Calculations
+
+```{r}
+# Assignment operators in R: = vs. <-
+# Notice Global Environment
+
+
+
+```
+
+
+
+
+

@@ -1,0 +1,76 @@
+---
+title: "Class 1 R Notebook"
+output:
+  pdf_document: default
+---
+
+```{r}
+# loads a package needed to use the read_csv() function
+# install package before first using it for the first time
+
+library(readr)
+
+# loads the lego dataframe into the environment from GitHub
+
+lego <- read_csv("https://raw.githubusercontent.com/JA-McLean/STOR455/master/data/lego.csv")
+
+# Alternative way to load lego (remove # to use)
+# lego.csv must be saved in the same folder as this notebook!
+
+#lego <- read_csv("lego.csv")
+
+
+# Shows the variables and first 6 cases (by default)
+
+head(lego) 
+```
+
+```{r}
+# dataframe$variable_name
+
+mean(lego$Amazon_Price)
+```
+
+```{r}
+# dataframe$variable_name
+
+mean(lego$Amazon_Price, na.rm=TRUE)
+median(lego$Amazon_Price, na.rm=TRUE)
+```
+
+```{r}
+hist(lego$Amazon_Price)
+boxplot(lego$Amazon_Price, horizontal = TRUE)
+```
+
+```{r}
+# Assignment operators in R: = vs. <-
+
+xbar = mean(lego$Amazon_Price, na.rm=TRUE)
+m = median(lego$Amazon_Price, na.rm=TRUE)
+
+residxbar = lego$Amazon_Price - xbar
+residm = lego$Amazon_Price - m
+```
+
+```{r}
+# removes NA Amazon_Prices
+
+lego_rm_AP_na = subset(lego, is.na(Amazon_Price) == FALSE)
+```
+
+```{r}
+# Assignment operators in R: = vs. <-
+
+xbar = mean(lego_rm_AP_na$Amazon_Price)
+m = median(lego_rm_AP_na$Amazon_Price)
+
+residxbar = lego_rm_AP_na$Amazon_Price - xbar
+residm = lego_rm_AP_na$Amazon_Price - m
+```
+
+```{r}
+sum(residxbar^2)
+
+sum(residm^2)
+```
