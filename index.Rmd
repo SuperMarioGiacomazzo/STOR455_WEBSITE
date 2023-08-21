@@ -108,7 +108,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 
 | Date | Lecture | Supplement| Reading | Suggested Exercises |
 |:------:|:------:|:------:|:------:|:------:|
-| Aug 22     | [Model Basics](Lectures/1-Model Basics.pdf) | [zip]()         | 0.1      | All Ch. 0          |
+| Aug 22     | [Model Basics](Lectures/1-Model Basics.pdf) | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Model_Basics.zip)         | 0.1      | All Ch. 0          |
 | Aug 24     | Four Step Process        |         | 0.2         | All Ch. 0         |
 | Aug 29     |         |         |          |          |
 | Aug 31    |         |         |          |          |
