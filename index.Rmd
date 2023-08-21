@@ -147,11 +147,11 @@ Homeworks and Quizzes are sorted by the date assigned below. You can download th
 
 | Assigned | HW (HW) | Quiz (Q) | Due Date (Time) |
 |:------:|:--------:|:--------:|:------:|
-| Aug 22  | HW1 |  | Aug 25 (5 PM) |
+| Aug 22  | [HW1](Homework/HW1.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW1.zip)) |  | Aug 25 (5 PM) |
 | Aug 25  | HW2 |  | Sep 1 (5 PM) |
 | Aug 29  |  | Q1  | Aug 29 (3:15 PM) |
 | Sep 1  | HW3 |  | Sep 8 (5 PM) |
-| Sep 8  | HW4 |  | Sep 15 (2 PM) |
+| Sep 8  | HW4 |  | Sep 15 (5 PM) |
 | Sep 12 |  | Q2  | Sep 12 (3:15 PM) |
 | |     |             |  |
 
