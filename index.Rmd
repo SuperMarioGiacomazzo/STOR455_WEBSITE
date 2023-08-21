@@ -108,8 +108,8 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 
 | Date | Lecture | Supplement| Reading | Suggested Exercises |
 |:------:|:------:|:------:|:------:|:------:|
-| Aug 22     | [Modeling Basics/ R Intro](Lectures/1 - Model Basics and Intro to R.pdf) |          |          |          |
-| Aug 24     |         |         |          |          |
+| Aug 22     | [Model Basics](Lectures/1-Model Basics.pdf) | [Template](),[Complete]()         | 0.1      | All Ch. 0          |
+| Aug 24     | Four Step Process        |         | 0.2         | All Ch. 0         |
 | Aug 29     |         |         |          |          |
 | Aug 31    |         |         |          |          |
 | Sep 5    |  Well-being Day      |         |          |          |
@@ -118,7 +118,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Sep 14    |       |         |          |          |
 | Sep 19    |       |         |          |          |
 | Sep 21    |       |         |          |          |
-| Sep 26    |       |         |          |          |
+| Sep 26    | Midterm 1      |         |          |          |
 | Sep 28    |       |         |          |          |
 | Oct 3    |       |         |          |          |
 | Oct 5    |       |         |          |          |
@@ -129,7 +129,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Oct 24    |       |         |          |          |
 | Oct 26    |       |         |          |          |
 | Oct 31    |       |         |          |          |
-| Nov 2   |       |         |          |          |
+| Nov 2   | Midterm 2      |         |          |          |
 | Nov 7   |       |         |          |          |
 | Nov 9   |       |         |          |          |
 | Nov 14   |       |         |          |          |
@@ -165,7 +165,7 @@ Homeworks and Quizzes are sorted by the date assigned below. You can download th
 
 - **[Additional Necessary Tools for Mac Users](https://mac.r-project.org/tools/)**
 
-- **[Instructions for Accessing R Studio on the UNC Server](https://drive.google.com/file/d/1ATZO-wpuqzHbXVnJqm7wXpt-yfMbo2Jy/view?usp=sharing)**
+- **[Datasets from Textbook](https://www.macmillanlearning.com/studentresources/college/collegebridgepage/stat22e.html)**
 
 This page was last updated on `r Sys.time()` Eastern Time.
 

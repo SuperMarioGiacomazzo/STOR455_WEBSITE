@@ -1,12 +1,15 @@
 ---
-title: "Class 1 R Notebook"
+title: "Supplement for Lecture 1"
 output:
   pdf_document: default
-  html_notebook: default
 ---
 
-```{r, echo=F}
-# Put all Required Packages Here
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+library(rmarkdown)
+library(tinytex)
+library(knitr)
 library(readr)
 ```
 
@@ -58,11 +61,31 @@ boxplot(lego$Amazon_Price)
 # Assignment operators in R: = vs. <-
 # Notice Global Environment
 
+xbar <- mean(lego$Amazon_Price, na.rm=TRUE)
+m = median(lego$Amazon_Price, na.rm=TRUE)
 
+residxbar = lego$Amazon_Price - xbar
+residm = lego$Amazon_Price - m
 
+sum(residxbar^2)
+
+sum(residm^2)
 ```
 
+# Remove Missing Values for Lego Prices
+
+```{r}
+lego_rm = subset(lego, is.na(Amazon_Price) == FALSE)
 
 
+xbar <- mean(lego_rm$Amazon_Price, na.rm=TRUE)
+m = median(lego_rm$Amazon_Price, na.rm=TRUE)
 
+residxbar = lego_rm$Amazon_Price - xbar
+residm = lego_rm$Amazon_Price - m
+
+sum(residxbar^2)
+
+sum(residm^2)
+```
 

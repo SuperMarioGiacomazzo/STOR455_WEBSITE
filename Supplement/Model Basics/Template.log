@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.31)  19 AUG 2023 17:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.31)  21 AUG 2023 03:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -597,16 +597,16 @@ g
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-12.
+16.
 (C:\Users\mgiac\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-114.
+133.
 (C:\Users\mgiac\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (223.24297pt too wide) in paragraph at lines 212--212
+Overfull \hbox (223.24297pt too wide) in paragraph at lines 208--208
 []\T1/lmtt/m/n/10 ##  $ Set_Name     : chr [1:1304] "Extra Dots - Series 2" "Ex
 tra Dots - Series 1" "Creative Blue Bricks" "Creative Green Bricks" ...[] 
  []
@@ -614,36 +614,46 @@ tra Dots - Series 1" "Creative Blue Bricks" "Creative Green Bricks" ...[]
 [1
 
 {C:/Users/mgiac/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}]
-<Template_files/figure-latex/unnamed-chunk-5-1.pdf, id=18, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-4-1.pdf, id=18, 469.755pt x 325.215p
 t>
-File: Template_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
-<use Template_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-5-1.pdf  use
-d on input line 267.
+<use Template_files/figure-latex/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-4-1.pdf  use
+d on input line 263.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[2] [3 <./Template_files/figure-latex/unnamed-chunk-5-1.pdf>] (Template.aux) ) 
+[2]
+<Template_files/figure-latex/unnamed-chunk-4-2.pdf, id=30, 469.755pt x 325.215p
+t>
+File: Template_files/figure-latex/unnamed-chunk-4-2.pdf Graphic file (type pdf)
+
+<use Template_files/figure-latex/unnamed-chunk-4-2.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-4-2.pdf  use
+d on input line 271.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[3 <./Template_files/figure-latex/unnamed-chunk-4-1.pdf>] [4 <./Template_files/
+figure-latex/unnamed-chunk-4-2.pdf>] [5] (Template.aux) ) 
 Here is how much of TeX's memory you used:
- 13695 strings out of 478343
- 221019 string characters out of 2834742
- 572178 words of memory out of 3000000
- 31852 multiletter control sequences out of 15000+600000
+ 13712 strings out of 478343
+ 221582 string characters out of 2834742
+ 573336 words of memory out of 3000000
+ 31862 multiletter control sequences out of 15000+600000
  502062 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,5n,81p,1007b,601s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{
-C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{
-C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}
-<C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.
-pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmb
-x12.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmr10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/lm/lmr17.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmtt10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/lm/lmtti10.pfb>
-Output written on Template.pdf (3 pages, 173534 bytes).
+ 74i,5n,81p,1007b,605s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/mgiac/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/mgiac/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Users/mgiac/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Users/mgiac/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/mgi
+ac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/
+mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Use
+rs/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:
+/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtti10.pf
+b>
+Output written on Template.pdf (5 pages, 187324 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 18478 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
+ 18499 words of extra memory for PDF output out of 20736 (max. 10000000)
 
