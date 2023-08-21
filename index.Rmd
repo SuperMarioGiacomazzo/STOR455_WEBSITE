@@ -80,7 +80,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 
 - Office Hours:
     - Dr. Mario: W, 9AM - 11AM & 12PM - 2PM, Hanes 134
-    - Coleman: M, 12PM - 3PM, Hanes B-TBD
+    - Coleman: M, 12PM - 3PM, Hanes B-07
     
 - Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
 
@@ -108,11 +108,11 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 
 | Date | Lecture | Supplement| Reading | Suggested Exercises |
 |:------:|:------:|:------:|:------:|:------:|
-| Aug 22     | [Model Basics](Lectures/1-Model Basics.pdf) | [Template](),[Complete]()         | 0.1      | All Ch. 0          |
+| Aug 22     | [Model Basics](Lectures/1-Model Basics.pdf) | [zip]()         | 0.1      | All Ch. 0          |
 | Aug 24     | Four Step Process        |         | 0.2         | All Ch. 0         |
 | Aug 29     |         |         |          |          |
 | Aug 31    |         |         |          |          |
-| Sep 5    |  Well-being Day      |         |          |          |
+| Sep 5    |  <span style="color:#EF426F">Well-being Day</span>      |         |          |          |
 | Sep 7    |       |         |          |          |
 | Sep 12    |       |         |          |          |
 | Sep 14    |       |         |          |          |
@@ -125,7 +125,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Oct 10    |       |         |          |          |
 | Oct 12   |       |         |          |          |
 | Oct 17   |       |         |          |          |
-| Oct 19    | Fall Break      |         |          |          |
+| Oct 19    | <span style="color:#EF426F">Fall Break</span>      |         |          |          |
 | Oct 24    |       |         |          |          |
 | Oct 26    |       |         |          |          |
 | Oct 31    |       |         |          |          |
@@ -135,7 +135,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Nov 14   |       |         |          |          |
 | Nov 16   |       |         |          |          |
 | Nov 21   |       |         |          |          |
-| Nov 23   | Thanksgiving      |         |          |          |
+| Nov 23   | <span style="color:#EF426F">Thanksgiving</span>      |         |          |          |
 | Nov 28   |       |         |          |          |
 | Nov 30   |       |         |          |          |
 | Dec 5   |       |         |          |          |

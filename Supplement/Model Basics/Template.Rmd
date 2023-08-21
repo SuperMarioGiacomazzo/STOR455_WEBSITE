@@ -1,5 +1,5 @@
 ---
-title: "Supplement for Lecture 1"
+title: "Supplement for Lecture 1: Model Basics"
 output:
   pdf_document: default
 ---
@@ -7,6 +7,8 @@ output:
 ```{r setup, include=FALSE}
 #This code chunk is for modifying the global options and for loading required R packages
 knitr::opts_chunk$set(echo = TRUE)
+
+#install.packages("rmarkdown")
 library(rmarkdown)
 library(tinytex)
 library(knitr)
@@ -16,76 +18,123 @@ library(readr)
 # Read in Dataset
 
 ```{r}
-# loads a package needed to use the read_csv() function
-# install package before first using it for the first time
+# Loads a package needed to use the read_csv() function
+# CSV file needs to be in the same folder as your RMD file
+# Default working directory is same as directory of your RMD file
 
-lego <- read_csv("lego.csv")
+lego1 <- read_csv("lego.csv")
 
-# Alternative way to load lego (remove # to use)
-# You can load a csv file directly from internet (i.e. Github)
-# lego <- read_csv("https://raw.githubusercontent.com/JA-McLean/STOR455/master/data/lego.csv")
+# You can specify the full path on your computer like below
+#lego2 = read_csv("D:/Mario Documents/UNC/STOR 455/STOR455_WEBSITE/Supplement/Model Basics/lego.csv")
+
+# Created Objects lego1 and lego2 using <- and =
 ```
+
+Notice that objects `lego1` and `lego2` have been added to the Global Environment. 
 
 # Preview Dataset
 
 ```{r}
-head(lego) #Vertically (Top 6 Rows by Default)
-str(lego)  #Horizontally
+head(lego1) #Vertically (Top 6 Rows by Default)
+str(lego1)  #Horizontally
+names(lego1) #Get Vector of Variable Names
 ```
 
-# Summary of Amazon Price
+How would you show the top 12 rows instead of the top 6? You can use `?head` to access the documentation for the `head()` function.
 
-### Numerically
+# Subsetting the Data
+
+### Datasets are Just Fancy Matrices
 
 ```{r}
-#dataframe$variable
-
-mean(lego$Amazon_Price,na.rm=T)
-median(lego$Amazon_Price,na.rm=T)
-sd(lego$Amazon_Price, na.rm=T)
+dim(lego1)
 ```
 
-### Visually
-
-Example of how to add a summary to R Code. You can write paragraphs outside the code chunks like this. For example, I may want to tell my audience that the visual below shows a histogram and boxplot of the Amazon price of lego sets, and we can clearly see that the distribution is extremely right-skewed.
+This dataset has 1,304 observations or cases and 15 variables or covariates. The variables $n$ and $p$ are typically used to represent the sample size and number of variables. Therefore we would say that $n=1304$ and $p=15$. To subset the dataset we can use the double brackets to select/deselect rows or columns
 
 ```{r}
-hist(lego$Amazon_Price, breaks=100) #Use Help to Find Out How to Change # of Bins
-boxplot(lego$Amazon_Price)
+lego1[c(1,5, 10, 15, 20),]
+lego1[,c(1,5, 15)]
+lego1[,c("Item_Number","Price","Size")]
+lego1[,names(lego1)[c(1,5,15)]]
 ```
 
 
-# Creating Objects and Doing Calculations
+### Subsetting Based Off Values
 
 ```{r}
-# Assignment operators in R: = vs. <-
-# Notice Global Environment
+hist(lego1$Pieces)
 
-xbar <- mean(lego$Amazon_Price, na.rm=TRUE)
-m = median(lego$Amazon_Price, na.rm=TRUE)
+lego1$Pieces>1000
 
-residxbar = lego$Amazon_Price - xbar
-residm = lego$Amazon_Price - m
+large_lego = lego1[lego1$Pieces>2000,]
 
-sum(residxbar^2)
+small_lego = lego1[lego1$Pieces< 15,]
 
-sum(residm^2)
+middle_lego=lego1[lego1$Pieces>15 & lego1$Pieces<2000,]
+
+extreme_lego=lego1[lego1$Pieces<15 & lego1$Pieces>2000,]
 ```
 
-# Remove Missing Values for Lego Prices
+
+# Mathematical/Statistical Functions
+
+### Mathematical Calculations
 
 ```{r}
-lego_rm = subset(lego, is.na(Amazon_Price) == FALSE)
+#Scalars
+a=3
+b=4
+
+a+b
+a-b
+a*b
+a/b
+a^2
+log(a) #Defaults to natural log
+exp(a) # e^a
 
 
-xbar <- mean(lego_rm$Amazon_Price, na.rm=TRUE)
-m = median(lego_rm$Amazon_Price, na.rm=TRUE)
+#Vectors
+a=c(1,2,3,4)
+b=c(2,3,4,5)
 
-residxbar = lego_rm$Amazon_Price - xbar
-residm = lego_rm$Amazon_Price - m
+a+b
+a-b
+a*b
+a/b
+a^2
+log(a)
+exp(a)
 
-sum(residxbar^2)
+#Combination (Based off Exercise 0.15: Roller Coasters)
+yint=54
+slope=7.6
+TypeCode=c(0,1) #0=Wooden & 1=Steel
 
-sum(residm^2)
+TopSpeed = yint+slope*TypeCode
+TopSpeed
 ```
 
+### Statistical Functions
+
+```{r}
+mean(lego1$Amazon_Price,na.rm=T)
+median(lego1$Amazon_Price,na.rm=T)
+
+sd(lego1$Amazon_Price,na.rm=T)
+var(lego1$Amazon_Price,na.rm=T)
+IQR(lego1$Amazon_Price,na.rm=T)
+
+quantile(lego1$Amazon_Price,na.rm=T)
+quantile(lego1$Amazon_Price,c(0.05,0.1,0.9,0.95),na.rm=T)
+
+unique(lego1$Theme)
+table(lego1$Theme)
+
+table(lego1$Size,lego1$Availability)
+
+na_rm_lego1 = na.omit(lego1)
+cor(na_rm_lego1$Amazon_Price,na_rm_lego1$Price)
+lm(Amazon_Price ~ Price, data=na_rm_lego1)
+```
