@@ -108,7 +108,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 
 | Date | Lecture | Supplement| Reading | Suggested Exercises |
 |:------:|:------:|:------:|:------:|:------:|
-| Aug 22     | [Modeling Basics/ Intro to R](Lectures/1 - Model Basics and Intro to R.pdf) |          |          |          |
+| Aug 22     | [Modeling Basics/ R Intro](Lectures/1 - Model Basics and Intro to R.pdf) |          |          |          |
 | Aug 24     |         |         |          |          |
 | Aug 29     |         |         |          |          |
 | Aug 31    |         |         |          |          |
