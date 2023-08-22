@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.31)  21 AUG 2023 03:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.31)  21 AUG 2023 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -600,40 +600,27 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 16.
 (C:\Users\mgiac\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-133.
-(C:\Users\mgiac\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Overfull \hbox (223.24297pt too wide) in paragraph at lines 208--208
-[]\T1/lmtt/m/n/10 ##  $ Set_Name     : chr [1:1304] "Extra Dots - Series 2" "Ex
-tra Dots - Series 1" "Creative Blue Bricks" "Creative Green Bricks" ...[] 
- []
+) [1
 
-[1
-
-{C:/Users/mgiac/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}] [2] (Com
-plete.aux) ) 
+{C:/Users/mgiac/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map}] (Complet
+e.aux) ) 
 Here is how much of TeX's memory you used:
- 13666 strings out of 478343
- 220368 string characters out of 2834742
- 573103 words of memory out of 3000000
- 31837 multiletter control sequences out of 15000+600000
- 498879 words of font info for 68 fonts, out of 8000000 for 9000
+ 13619 strings out of 478343
+ 219596 string characters out of 2834742
+ 549188 words of memory out of 3000000
+ 31798 multiletter control sequences out of 15000+600000
+ 498255 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,5n,81p,1007b,605s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
-m/lm-ec.enc}{C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
-m/lm-ts1.enc}<C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmbx12.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/lm/lmr10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmr17.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmtt10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmtti10.pfb>
-Output written on Complete.pdf (2 pages, 127703 bytes).
+ 74i,5n,81p,1007b,444s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm
+-ec.enc}<C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
+/lmbx12.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmr10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmr17.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmtt10.pfb>
+Output written on Complete.pdf (1 page, 93260 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 16401 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 38 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
+ 16393 words of extra memory for PDF output out of 17280 (max. 10000000)
 
