@@ -108,8 +108,9 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 
 | Date | Lecture | Supplement| Reading | Suggested Exercises |
 |:------:|:------:|:------:|:------:|:------:|
-| Aug 22     | [Model Basics](Lectures/1-Model Basics.pdf) | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Model_Basics.zip)         | 0.1      | All Ch. 0          |
-| Aug 24     | Four Step Process        |         | 0.2         | All Ch. 0         |
+| Aug 22     | [Model Basics](Lectures/1 - Model Basics.pdf) | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Model_Basics.zip)         | 0.1      | All Ch. 0          |
+| Aug 24     | [Model Basics (Cont.)](Lectures/1 - Model Basics.pdf) | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Model_Basics.zip)         | 0.1      | All Ch. 0          |
+| | Four Step Process        |         | 0.2         | All Ch. 0         |
 | Aug 29     |         |         |          |          |
 | Aug 31    |         |         |          |          |
 | Sep 5    |  <span style="color:#EF426F">Well-being Day</span>      |         |          |          |
@@ -147,7 +148,7 @@ Homeworks and Quizzes are sorted by the date assigned below. You can download th
 
 | Assigned | HW (HW) | Quiz (Q) | Due Date (Time) |
 |:------:|:--------:|:--------:|:------:|
-| Aug 24  | [HW1](Homework/HW1.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW1.zip)) |  | Aug 31 (5 PM) |
+| Aug 24  | [HW1](Homework/HW1.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW1.zip)) |  | Aug 31 (2 PM) |
 | Aug 29  |  | Q1  | Aug 29 (3:15 PM) |
 | Aug 31  | HW2 |  | Sep 7 (2 PM) |
 | Sep 7  | HW3 |  | Sep 14 (2 PM) |
