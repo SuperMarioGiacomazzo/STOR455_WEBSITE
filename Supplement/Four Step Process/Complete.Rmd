@@ -12,17 +12,68 @@ library(tinytex)
 library(knitr)
 library(readr)
 library(mosaic) #Install Mosaic Package
+library(Stat2Data) #Install Stat2Data
 ```
 
-# Read in Dataset
+# Read in Datasets
 
 ```{r, message=FALSE}
 lego <- read_csv("lego.csv")
-lego_2_theme <- read_csv("lego_two_themes.csv")
 ```
 
+# Visuals of Amazon Price
 
+```{r}
+hist(lego$Amazon_Price)
+boxplot(lego$Amazon_Price, horizontal = TRUE)
+```
 
+# Estimating Constant for Models
 
+```{r}
+#We know that we don't have Amazon Prices for Certain Lego Sets
+Amazon_lego = subset(lego, is.na(Amazon_Price)==F)
 
+xbar = mean(Amazon_lego$Amazon_Price)
+m = median(Amazon_lego$Amazon_Price)
+
+xbar
+m
+```
+
+# Assessing Model Fit
+
+```{r}
+xbar_resid = Amazon_lego$Amazon_Price - xbar
+m_resid = Amazon_lego$Amazon_Price - m
+
+xbar_sse=sum(xbar_resid^2)
+xbar_sae=sum(abs(xbar_resid))
+
+m_sse=sum(m_resid^2)
+m_sae=sum(abs(m_resid))
+
+data.frame(Estimator=c("Mean","Median"),Sum_Squared_Errors=c(xbar_sse,m_sse), Sum_Absolute_Errors=c(xbar_sae,m_sae))
+```
+
+# Use of Mosaic Package
+
+```{r}
+mean(Amazon_Price~Theme,data=Amazon_lego) #Average Price Per Theme
+tally(~Theme,data=Amazon_lego) #Number of Observations For Each Theme
+sd(Amazon_Price~Theme,data=Amazon_lego) #SD of Price Per Theme
+boxplot(Amazon_Price~Theme,data=Amazon_lego,las=2) #Side-by-Side Boxplots
+```
+
+# Two-Sample t-Test for Difference in Means
+
+```{r}
+lego_2_theme = subset(Amazon_lego, Theme == 'Friends' | Theme =='Marvel')
+#lego_2_theme = subset(Amazon_lego,Theme %in% c('Friends','Marvel'))
+
+t.test(Amazon_Price~Theme, data= lego_2_theme) #Conduct t-Test
+
+boxplot(Amazon_Price~Theme, data=lego_2_theme) #Evaluate Assumptions
+tally(~Theme,data=lego_2_theme) #Sample size > 30, Enough Data for CLT
+```
 

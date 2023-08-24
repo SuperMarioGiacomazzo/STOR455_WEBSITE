@@ -110,7 +110,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 |:------:|:------:|:------:|:------:|:------:|
 | Aug 22     | [Model Basics](Lectures/1 - Model Basics.pdf) | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Model_Basics.zip)         | 0.1      | All Ch. 0          |
 | Aug 24     | [Model Basics (Cont.)](Lectures/1 - Model Basics.pdf) | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Model_Basics.zip)         | 0.1      | All Ch. 0          |
-| | Four Step Process        |         | 0.2         | All Ch. 0         |
+| | [Four Step Process](Lectures/2 - Four Step Process.pdf)        | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Four_Step_Process.zip)         | 0.2         | All Ch. 0         |
 | Aug 29     |         |         |          |          |
 | Aug 31    |         |         |          |          |
 | Sep 5    |  <span style="color:#EF426F">Well-being Day</span>      |         |          |          |
@@ -163,7 +163,7 @@ Homeworks and Quizzes are sorted by the date assigned below. You can download th
 
 - **[Installing R](https://cran.r-project.org/)**
 
-- **[Installing R Studio](https://www.rstudio.com/products/rstudio/#Desktop)**
+- **[Installing R Studio](https://posit.co/download/rstudio-desktop/)**
 
 - **[Additional Necessary Tools for Mac Users](https://mac.r-project.org/tools/)**
 
