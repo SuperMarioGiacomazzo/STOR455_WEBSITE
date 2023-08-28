@@ -1,0 +1,77 @@
+---
+title: "Supplement for Lecture 2: Four Step Process"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+library(rmarkdown)
+library(tinytex)
+library(knitr)
+library(readr)
+library(mosaic) #Install Mosaic Package
+library(Stat2Data) #Install Stat2Data
+```
+
+# Read in Datasets
+
+```{r, message=FALSE}
+lego <- read_csv("lego.csv")
+```
+
+# Visuals of Amazon Price
+
+```{r}
+hist(lego$Amazon_Price)
+boxplot(lego$Amazon_Price, horizontal = TRUE)
+```
+
+# Estimating Constant for Models
+
+```{r,eval=FALSE}
+#We know that we don't have Amazon Prices for Certain Lego Sets
+Amazon_lego = ...
+
+xbar = mean(Amazon_lego$Amazon_Price)
+m = median(Amazon_lego$Amazon_Price)
+
+xbar
+m
+```
+
+# Assessing Model Fit
+
+```{r,eval=FALSE}
+xbar_resid = ...
+m_resid = ...
+
+xbar_sse=sum(...)
+xbar_sae=sum(...)
+
+m_sse=sum(...)
+m_sae=sum(...)
+
+data.frame(Estimator=c("Mean","Median"),Sum_Squared_Errors=c(xbar_sse,m_sse), Sum_Absolute_Errors=c(xbar_sae,m_sae))
+```
+
+# Use of Mosaic Package
+
+```{r,eval=FALSE}
+mean(Amazon_Price~Theme,data=Amazon_lego) #Average Price Per Theme
+tally(~Theme,data=Amazon_lego) #Number of Observations For Each Theme
+sd(Amazon_Price~Theme,data=Amazon_lego) #SD of Price Per Theme
+boxplot(Amazon_Price~Theme,data=Amazon_lego,las=2) #Side-by-Side Boxplots
+```
+
+# Two-Sample t-Test for Difference in Means
+
+```{r,eval=FALSE}
+lego_2_theme = subset(...)
+
+t.test(...) #Conduct t-Test
+
+boxplot(...) #Evaluate Assumptions
+tally(...) #Sample size > 30, Enough Data for CLT
+```
