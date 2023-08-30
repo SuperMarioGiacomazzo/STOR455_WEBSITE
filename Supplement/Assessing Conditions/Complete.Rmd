@@ -15,65 +15,101 @@ library(mosaic) #Install Mosaic Package
 library(Stat2Data) #Install Stat2Data
 ```
 
-# Read in Datasets
+# Load Data from Textbook
 
 ```{r, message=FALSE}
-lego <- read_csv("lego.csv")
+data("USstamps") # Load Data
+
+stamp = USstamps # Shorten Name
+
+rm(USstamps) #Removes Old Object from Environment
 ```
 
-# Visuals of Amazon Price
+# Scatterplot of Price vs Year
 
 ```{r}
-hist(lego$Amazon_Price)
-boxplot(lego$Amazon_Price, horizontal = TRUE)
+plot(Price ~ Year,data=stamp)
+
+#Remove First Four Years in Data (1885,1917,1919,1932)
+#See Exercise 1.33 for Reason Why
+
+stamp2 = subset(stamp, Year > 1932)
+plot(Price ~ Year,data=stamp2)
 ```
 
-# Estimating Constant for Models
+# Fit Linear Regression Models
 
 ```{r}
-#We know that we don't have Amazon Prices for Certain Lego Sets
-Amazon_lego = subset(lego, is.na(Amazon_Price)==F)
+#Linear Regression on Original Data
+mod1 <- lm(Price~Year,data=stamp)
+mod1
+summary(mod1)
+plot(Price ~ Year,data=stamp)
+abline(mod1)
 
-xbar = mean(Amazon_lego$Amazon_Price)
-m = median(Amazon_lego$Amazon_Price)
 
-xbar
-m
+#Linear Regression on Subsetted Data
+mod2 <-lm(Price~Year, data=stamp2)
+mod2
+summary(mod2)
+plot(Price ~ Year,data=stamp2)
+abline(mod2)
+
 ```
 
-# Assessing Model Fit
+# Saving Fitted Values and Residuals
 
 ```{r}
-xbar_resid = Amazon_lego$Amazon_Price - xbar
-m_resid = Amazon_lego$Amazon_Price - m
+mod1$residuals
+mod1$fitted.values
 
-xbar_sse=sum(xbar_resid^2)
-xbar_sae=sum(abs(xbar_resid))
+stamp$fit=mod1$fitted.values
+stamp$resid=mod1$residuals
 
-m_sse=sum(m_resid^2)
-m_sae=sum(abs(m_resid))
+mod2$residuals
+mod2$fitted.values
 
-data.frame(Estimator=c("Mean","Median"),Sum_Squared_Errors=c(xbar_sse,m_sse), Sum_Absolute_Errors=c(xbar_sae,m_sae))
+stamp2$fit=mod2$fitted.values
+stamp2$resid=mod2$residuals
 ```
 
-# Use of Mosaic Package
+# Residuals vs Fit
 
 ```{r}
-mean(Amazon_Price~Theme,data=Amazon_lego) #Average Price Per Theme
-tally(~Theme,data=Amazon_lego) #Number of Observations For Each Theme
-sd(Amazon_Price~Theme,data=Amazon_lego) #SD of Price Per Theme
-boxplot(Amazon_Price~Theme,data=Amazon_lego,las=2) #Side-by-Side Boxplots
+plot(y=stamp$resid,x=stamp$fit,type="l")
+abline(h=0) #h=location of horizontal line
+
+plot(y=stamp2$resid,x=stamp2$fit,type="l")
+abline(h=0)
 ```
 
-# Two-Sample t-Test for Difference in Means
+# Residuals vs Order (Time)
 
 ```{r}
-lego_2_theme = subset(Amazon_lego, Theme == 'Friends' | Theme =='Marvel')
-#lego_2_theme = subset(Amazon_lego,Theme %in% c('Friends','Marvel'))
+plot(y=stamp$resid,x=1:25,type="l")
+abline(h=0) #h=location of horizontal line
 
-t.test(Amazon_Price~Theme, data= lego_2_theme) #Conduct t-Test
+plot(y=stamp2$resid,x=stamp2$Year,type="l")
+abline(h=0)
+```
 
-boxplot(Amazon_Price~Theme, data=lego_2_theme) #Evaluate Assumptions
-tally(~Theme,data=lego_2_theme) #Sample size > 30, Enough Data for CLT
+# Histogram/Boxplots of Resid
+
+```{r}
+hist(mod1$residuals,breaks=5) #Remember: We can always plot residuals directly from model object
+hist(stamp2$resid,breaks=5) #Remember: We can plot residuals that we saved into our dataset
+
+boxplot(stamp$resid)
+boxplot(mod2$residuals)
+```
+
+# Normal Plots
+
+```{r}
+qqnorm(stamp$resid)
+qqline(stamp$resid)
+
+qqnorm(stamp2$resid)
+qqline(stamp2$resid)
 ```
 
