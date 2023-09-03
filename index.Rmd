@@ -119,9 +119,9 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Aug 24     | [Model Basics (Cont.)](Lectures/1 - Model Basics.pdf) | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Model_Basics.zip)         | 0.1      | All Ch. 0          |
 | Aug 29    |  <span style="color:#EF426F">No Class</span>      |  
 | Aug 31   | [Four Step Process](Lectures/2 - Four Step Process.pdf)        | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Four_Step_Process.zip)         | 0.2         | All Ch. 0         |
-|    | [Simple Linear Regression Model](Lectures/3 - Simple Linear Regression Model.pdf)       |       |  1.1       |Ch.1: 1,5-8,15,17,19|
 | Sep 5    |  <span style="color:#EF426F">Well-being Day</span>      |         |          |          |
-| Sep 7    | [Conditions for a Simple Linear Model](Lectures/4 - Conditions for a Simple Linear Model.pdf)        |         | 1.2          | None          |
+| Sep 7   | [Simple Linear Regression Model](Lectures/3 - Simple Linear Regression Model.pdf)       |       |  1.1       |Ch.1: 1,5-8,15,17,19|
+|     | [Conditions for a Simple Linear Model](Lectures/4 - Conditions for a Simple Linear Model.pdf)        |         | 1.2          | None          |
 | | [Assessing Conditions](Lectures/5 - Assessing Conditions.pdf)        | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_Conditions.zip)      | 1.3          |Ch.1: 2,10,12,22,24,26          |
 | Sep 12    |       |         |          |          |
 | Sep 14    |       |         |          |          |
