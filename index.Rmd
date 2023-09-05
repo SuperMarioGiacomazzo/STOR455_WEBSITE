@@ -123,8 +123,9 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Sep 7   | [Simple Linear Regression Model](Lectures/3 - Simple Linear Regression Model.pdf)       |       |  1.1       |Ch.1: 1,5-8,15,17,19|
 |     | [Conditions for a Simple Linear Model](Lectures/4 - Conditions for a Simple Linear Model.pdf)        |         | 1.2          | None          |
 | | [Assessing Conditions](Lectures/5 - Assessing Conditions.pdf)        | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_Conditions.zip)      | 1.3          |Ch.1: 2,10,12,22,24,26          |
-| Sep 12    |       |         |          |          |
-| Sep 14    |       |         |          |          |
+| Sep 12    |  Transformations     |         | 1.4 |Ch.1: 27, 29abc, 31, 32abc |
+|    | Outliers & Influential Points        |  zip     | 1.5 | Ch.1: 33, 43, 47      |
+| Sep 14    |       |         |  |        |
 | Sep 19    |       |         |          |          |
 | Sep 21    |       |         |          |          |
 | Sep 26    |      |         |          |          |
@@ -158,7 +159,7 @@ Homeworks and Quizzes are sorted by the date assigned below. You can download th
 |:------:|:--------:|:--------:|:------:|
 | Aug 24  | [HW1](Homework/HW1.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW1.zip)) |  | Aug 31 (2 PM) |
 | Aug 31  | [HW2](Homework/HW2.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW2.zip)) |  | Sep 7 (2 PM) |
-| Sep 7  | HW3 |  | Sep 14 (2 PM) |
+| Sep 7  | [HW3](Homework/HW3.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW3.zip)) |  | Sep 14 (2 PM) |
 | Sep 12 |  | Q1  | Sep 12 (3:15 PM) |
 | Sep 14  | HW4 |  | Sep 21 (2 PM) |
 | Sep 19 |  | Q2  | Sep 19 (3:15 PM) |

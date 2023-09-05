@@ -1,0 +1,98 @@
+---
+title: "Supplement for Lecture 5: Assessing Conditions"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+library(rmarkdown)
+library(tinytex)
+library(knitr)
+library(readr)
+library(mosaic) #Install Mosaic Package
+library(Stat2Data) #Install Stat2Data
+```
+
+# Load Data from Textbook
+
+```{r, message=FALSE}
+data("USstamps") # Load Data
+
+stamp = USstamps # Shorten Name
+
+rm(USstamps) #Removes Old Object from Environment
+```
+
+# Scatterplot of Price vs Year
+
+```{r}
+plot(Price ~ Year,data=stamp)
+
+#Remove First Four Years in Data (1885,1917,1919,1932)
+#See Exercise 1.33 for Reason Why
+
+```
+
+# Fit Linear Regression Models
+
+```{r}
+#Linear Regression on Original Data
+mod1 <- lm(Price~Year,data=stamp)
+mod1
+summary(mod1)
+plot(Price ~ Year,data=stamp)
+abline(mod1)
+
+
+#Linear Regression on Subsetted Data
+
+
+```
+
+# Saving Fitted Values and Residuals
+
+```{r}
+mod1$residuals
+mod1$fitted.values
+
+stamp$fit=mod1$fitted.values
+stamp$resid=mod1$residuals
+
+```
+
+# Residuals vs Fit
+
+```{r}
+plot(y=stamp$resid,x=stamp$fit,type="l")
+abline(h=0) #h=location of horizontal line
+
+```
+
+# Residuals vs Order (Time)
+
+```{r}
+plot(y=stamp$resid,x=1:25,type="l")
+abline(h=0) #h=location of horizontal line
+
+```
+
+# Histogram/Boxplots of Resid
+
+```{r}
+hist(mod1$residuals,breaks=5) #Remember: We can always plot residuals directly from model object
+#hist(stamp2$resid,breaks=5) #Remember: We can plot residuals that we saved into our dataset
+
+boxplot(stamp$resid)
+#boxplot(mod2$residuals)
+```
+
+# Normal Plots
+
+```{r}
+qqnorm(stamp$resid)
+qqline(stamp$resid)
+
+```
+
