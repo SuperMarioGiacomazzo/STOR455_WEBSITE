@@ -1,5 +1,5 @@
 ---
-title: "Supplement for Lecture 5: Assessing Conditions"
+title: "Supplement for Lecture 7: Outliers and Influential Points"
 output:
   pdf_document: default
 ---
@@ -18,81 +18,147 @@ library(Stat2Data) #Install Stat2Data
 # Load Data from Textbook
 
 ```{r, message=FALSE}
-data("USstamps") # Load Data
+data("SpeciesArea") # Load Data
 
-stamp = USstamps # Shorten Name
+species = SpeciesArea[,-c(4,5)] # Shorten Name and Remove Last 2 Columns
 
-rm(USstamps) #Removes Old Object from Environment
+rm(SpeciesArea) #Removes Old Object from Environment
+
+head(species)
 ```
 
-# Scatterplot of Price vs Year
+# Linear Model for Species vs Area
 
-```{r}
-plot(Price ~ Year,data=stamp)
+```{r,out.width="50%"}
+SpeciesModel=lm(Species~Area, data=species)
 
-#Remove First Four Years in Data (1885,1917,1919,1932)
-#See Exercise 1.33 for Reason Why
+plot(Species ~ Area,data=species,pch=16,col="blue")
+abline(SpeciesModel)
 
+plot(SpeciesModel$residuals~SpeciesModel$fitted.values,pch=16,col="blue")
+abline(0,0)
 ```
 
-# Fit Linear Regression Models
+# Default Plots from lm Object
 
-```{r}
-#Linear Regression on Original Data
-mod1 <- lm(Price~Year,data=stamp)
-mod1
-summary(mod1)
-plot(Price ~ Year,data=stamp)
-abline(mod1)
+```{r,out.width="50%"}
+plot(SpeciesModel) #Default Argument which=c(1,2,3,5)
 
+#See ?plot.lm (6 Plots Available)
 
-#Linear Regression on Subsetted Data
+#Plot 1: Residuals vs Fitted (We Did This Already)
+#Plot 2: Normal QQ (We Did This Already)
+#Plot 3: Square Root of Absolute Standardized Residual vs Fitted (Check for Outliers)
+#Plot 4: Not Part of Default
+#Plot 5: Residuals vs Leverage (Check for Influence)
+#Plot 6: Not Part of Default
 
-
-```
-
-# Saving Fitted Values and Residuals
-
-```{r}
-mod1$residuals
-mod1$fitted.values
-
-stamp$fit=mod1$fitted.values
-stamp$resid=mod1$residuals
+plot(SpeciesModel, which=c(1,2)) #Only Want First Two
 
 ```
+# Identifying Outliers
 
-# Residuals vs Fit
+```{r,out.width="50%"}
+#Alternate to SpeciesModel$residuals
+residuals(SpeciesModel)
 
-```{r}
-plot(y=stamp$resid,x=stamp$fit,type="l")
-abline(h=0) #h=location of horizontal line
+max(residuals(SpeciesModel)) #Largest
+min(residuals(SpeciesModel)) #Smallest
+max(abs(residuals(SpeciesModel))) #Farthest Away from 0
 
+which.max(abs(residuals(SpeciesModel))) #Returns Index of the Max
+
+#Bad Idea: Remove Data Point with Largest Outlier
+species.without.3 = species
+species.without.3
+
+#Standardizing Residuals
+SSE=sum(residuals(SpeciesModel)^2)
+n=length(residuals(SpeciesModel))
+std.error.regression = sqrt(SSE/(n-2))
+std.error.regression #Expect to be Off By 15 Species On Average When Using Model to Predict
+summary(SpeciesModel)
+
+#Plot of Standardized Residuals
+std.res=residuals(SpeciesModel)/std.error.regression
+plot(y=std.res,x=fitted(SpeciesModel),
+     main="Standardized Residuals Versus Fitted Values",
+     xlab="Fitted Values", ylab="Standardized Residuals",
+     ylim=c(-2.5,2.5))
+abline(h=c(-2,2),
+       col="red",
+       lty=c(2,2),
+       lwd=c(3,3))
 ```
 
-# Residuals vs Order (Time)
+# Assess Conditions of Residuals
 
-```{r}
-plot(y=stamp$resid,x=1:25,type="l")
-abline(h=0) #h=location of horizontal line
-
+```{r,out.width="50%"}
+qqnorm(SpeciesModel$residuals)
+qqline(SpeciesModel$residuals)
+hist(SpeciesModel$residuals)
 ```
 
-# Histogram/Boxplots of Resid
+# Transformation
 
-```{r}
-hist(mod1$residuals,breaks=5) #Remember: We can always plot residuals directly from model object
-#hist(stamp2$resid,breaks=5) #Remember: We can plot residuals that we saved into our dataset
+Three Possible Options Using Natural Logarithm Transformation Only
 
-boxplot(stamp$resid)
-#boxplot(mod2$residuals)
+- $y=\beta_0 +\beta_1log(x) + \epsilon$
+- $log(y)=\beta_0 +\beta_1x + \epsilon$
+- $log(y)=\beta_0 +\beta_1log(x) + \epsilon$
+
+```{r,out.width="50%"}
+# Run the Code and Try All Three To Choose Best
+TransMod=lm(Species~log(Area), data=species)
+summary(TransMod)
+
+plot(Species ~ log(Area),data=species,pch=16,col="blue")
+abline(TransMod)
+#abline(v=c(5,12),col=c("red","red"),lwd=c(3,3),lty=c(3,3)) #Run for First Option
+
+plot(TransMod,c(1,2))
 ```
+# Getting Fitted Values, Residuals, and Predictions
 
-# Normal Plots
+Using the model we fit to make predictions:
 
-```{r}
-qqnorm(stamp$resid)
-qqline(stamp$resid)
+$$ \widehat{\log(y)} = \hat\beta_0 + \hat\beta_1 \log(x) $$
 
+Transforming predictions back to the units of $Y=\textrm{Number of Species}$
+
+$$\hat{y}=e^{\widehat{\log(y)}}=e^{\hat\beta_0 + \hat\beta_1 log(x)}=e^{\hat\beta_0}x^{\hat\beta_1 } $$
+
+If we run `coef(TransMod)`, we find our estimates
+
+$$\hat{y}=e^{1.6249 + 0.2355 \log(x)}=e^{1.6249}x^{0.2355}$$
+
+```{r,out.width="50%"}
+#Recall Property of Logs
+10^log10(5)
+exp(log(7))
+
+#Extract Coefficients
+as.numeric(coef(TransMod))
+beta0=as.numeric(coef(TransMod))[1]
+beta1=as.numeric(coef(TransMod))[2]
+
+#Raw Predictions of Log(Species)
+species$logfit = fitted(TransMod)
+
+#3 Methods for Predictions of Actual Species
+species$fit1 = exp(species$logfit) 
+species$fit2= exp(beta0+beta1*log(species$Area))
+species$fit3 = exp(beta0)*species$Area^beta1
+
+#Obtain Residuals in Original Units of Species Variable to Calculate SE of Regression
+species$res = species$Species - species$fit1
+sqrt(sum(species$res^2)/(length(species$res)-2)) #Standard Error of Regression
+
+#Plot Fitted Model on Raw Untransformed Data
+plot(Species~Area, data=species)
+
+#Extrapolate for the Island Australia (7,700,000 km^2)
+plot(Species~Area, data=species)
+curve(exp(beta0+beta1*log(x)), add=TRUE, col="red")
 ```
 

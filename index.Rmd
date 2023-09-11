@@ -101,7 +101,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
   </div>
 </div> 
 
-# **Complete Before First Day of Class**
+# **Before First Day**
 - Bookmark this **[course website](https://supermariogiacomazzo.github.io/STOR455_WEBSITE/)** in your browser
 - Get familiar with the course website and Canvas
 - Login to Gradescope through Canvas
@@ -123,8 +123,9 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Sep 7   | [Simple Linear Regression Model](Lectures/3 - Simple Linear Regression Model.pdf)       |       |  1.1       |Ch.1: 1,5-8,15,17,19|
 |     | [Conditions for a Simple Linear Model](Lectures/4 - Conditions for a Simple Linear Model.pdf)        |         | 1.2          | None          |
 | | [Assessing Conditions](Lectures/5 - Assessing Conditions.pdf)        | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_Conditions.zip)      | 1.3          |Ch.1: 2,10,12,22,24,26          |
-| Sep 12    |  [Transformations](Lectures/6 - Transformations.pdf)     |         | 1.4 |Ch.1: 27, 29abc, 31, 32abc |
-|    | Outliers & Influential Points        |  zip     | 1.5 | Ch.1: 33, 43, 47      |
+| Sep 12 | [Assessing Conditions (Cont.)](Lectures/5 - Assessing Conditions.pdf)        | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_Conditions.zip)      | 1.3          |Ch.1: 2,10,12,22,24,26          |
+|     |  [Transformations](Lectures/6 - Transformations.pdf)     |         | 1.4 |Ch.1: 27, 29abc, 31, 32abc |
+|    | [Outliers & Influential Points](Lectures/7 - Outliers and Influential Points.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Outliers_and_Influential_Points.zip)     | 1.5 | Ch.1: 33, 43, 47      |
 | Sep 14    |       |         |  |        |
 | Sep 19    |       |         |          |          |
 | Sep 21    |       |         |          |          |

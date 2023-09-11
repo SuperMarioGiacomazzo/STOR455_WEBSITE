@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./Complete.tex
-(Complete.tex
+**./Template.tex
+(Template.tex
 LaTeX2e <2022-06-01> pre-release-0 (develop 2022-7-31 branch)
 L3 programming layer <2022-06-02> (C:\Users\mgiac\AppData\Local\Programs\MiKTeX
  2.9\tex/latex/base\article.cls
@@ -448,8 +448,8 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box55
-) (Complete.aux)
-\openout1 = `Complete.aux'.
+) (Template.aux)
+\openout1 = `Template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
 LaTeX Font Info:    ... okay on input line 109.
@@ -601,56 +601,56 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 (C:\Users\mgiac\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<Complete_files/figure-latex/unnamed-chunk-2-1.pdf, id=3, 469.755pt x 325.215pt
+<Template_files/figure-latex/unnamed-chunk-2-1.pdf, id=3, 469.755pt x 325.215pt
 >
-File: Complete_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-2-1.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-2-1.pdf  use
+<use Template_files/figure-latex/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-2-1.pdf  use
 d on input line 150.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-2-2.pdf, id=4, 469.755pt x 325.215pt
+<Template_files/figure-latex/unnamed-chunk-2-2.pdf, id=4, 469.755pt x 325.215pt
 >
-File: Complete_files/figure-latex/unnamed-chunk-2-2.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-2-2.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-2-2.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-2-2.pdf  use
+<use Template_files/figure-latex/unnamed-chunk-2-2.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-2-2.pdf  use
 d on input line 159.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 [1
 
-{C:/Users/mgiac/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map} <./Comple
+{C:/Users/mgiac/AppData/Local/MiKTeX/2.9/fonts/map/pdftex/pdftex.map} <./Templa
 te_files/figure-latex/unnamed-chunk-2-1.pdf>]
-<Complete_files/figure-latex/unnamed-chunk-3-1.pdf, id=24, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-3-1.pdf, id=24, 469.755pt x 325.215p
 t>
-File: Complete_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-3-1.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-3-1.pdf  use
+<use Template_files/figure-latex/unnamed-chunk-3-1.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-3-1.pdf  use
 d on input line 171.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-3-2.pdf, id=25, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-3-2.pdf, id=25, 469.755pt x 325.215p
 t>
-File: Complete_files/figure-latex/unnamed-chunk-3-2.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-3-2.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-3-2.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-3-2.pdf  use
+<use Template_files/figure-latex/unnamed-chunk-3-2.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-3-2.pdf  use
 d on input line 172.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-3-3.pdf, id=26, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-3-3.pdf, id=26, 469.755pt x 325.215p
 t>
-File: Complete_files/figure-latex/unnamed-chunk-3-3.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-3-3.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-3-3.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-3-3.pdf  use
+<use Template_files/figure-latex/unnamed-chunk-3-3.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-3-3.pdf  use
 d on input line 173.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-3-4.pdf, id=27, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-3-4.pdf, id=27, 469.755pt x 325.215p
 t>
-File: Complete_files/figure-latex/unnamed-chunk-3-4.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-3-4.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-3-4.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-3-4.pdf  use
+<use Template_files/figure-latex/unnamed-chunk-3-4.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-3-4.pdf  use
 d on input line 174.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 
@@ -667,218 +667,146 @@ Overfull \hbox (2.22104pt too wide) in paragraph at lines 171--175
 Overfull \vbox (2.00778pt too high) detected at line 189
  []
 
-[2 <./Complete_files/figure-latex/unnamed-chunk-2-2.pdf> <./Complete_files/figu
-re-latex/unnamed-chunk-3-1.pdf> <./Complete_files/figure-latex/unnamed-chunk-3-
-2.pdf> <./Complete_files/figure-latex/unnamed-chunk-3-3.pdf> <./Complete_files/
+[2 <./Template_files/figure-latex/unnamed-chunk-2-2.pdf> <./Template_files/figu
+re-latex/unnamed-chunk-3-1.pdf> <./Template_files/figure-latex/unnamed-chunk-3-
+2.pdf> <./Template_files/figure-latex/unnamed-chunk-3-3.pdf> <./Template_files/
 figure-latex/unnamed-chunk-3-4.pdf>]
-<Complete_files/figure-latex/unnamed-chunk-3-5.pdf, id=59, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-3-5.pdf, id=59, 469.755pt x 325.215p
 t>
-File: Complete_files/figure-latex/unnamed-chunk-3-5.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-3-5.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-3-5.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-3-5.pdf  use
+<use Template_files/figure-latex/unnamed-chunk-3-5.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-3-5.pdf  use
 d on input line 191.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-3-6.pdf, id=60, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-3-6.pdf, id=60, 469.755pt x 325.215p
 t>
-File: Complete_files/figure-latex/unnamed-chunk-3-6.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-3-6.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-3-6.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-3-6.pdf  use
+<use Template_files/figure-latex/unnamed-chunk-3-6.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-3-6.pdf  use
 d on input line 192.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 
-Overfull \hbox (2.22104pt too wide) in paragraph at lines 191--193
-[][] [] 
+Overfull \hbox (2.22104pt too wide) in paragraph at lines 191--194
+[][] []
  []
 
-[3 <./Complete_files/figure-latex/unnamed-chunk-3-5.pdf> <./Complete_files/figu
+[3 <./Template_files/figure-latex/unnamed-chunk-3-5.pdf> <./Template_files/figu
 re-latex/unnamed-chunk-3-6.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-323.
+315.
 (C:\Users\mgiac\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<Complete_files/figure-latex/unnamed-chunk-4-1.pdf, id=77, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-4-1.pdf, id=75, 469.755pt x 325.215p
 t>
-File: Complete_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-4-1.pdf  use
-d on input line 340.
+<use Template_files/figure-latex/unnamed-chunk-4-1.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-4-1.pdf  use
+d on input line 332.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 [4]
-<Complete_files/figure-latex/unnamed-chunk-5-1.pdf, id=83, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-5-1.pdf, id=81, 469.755pt x 325.215p
 t>
-File: Complete_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-5-1.pdf  use
+<use Template_files/figure-latex/unnamed-chunk-5-1.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-5-1.pdf  use
+d on input line 345.
+(pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
+<Template_files/figure-latex/unnamed-chunk-5-2.pdf, id=82, 469.755pt x 325.215p
+t>
+File: Template_files/figure-latex/unnamed-chunk-5-2.pdf Graphic file (type pdf)
+
+<use Template_files/figure-latex/unnamed-chunk-5-2.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-5-2.pdf  use
 d on input line 353.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-5-2.pdf, id=84, 469.755pt x 325.215p
-t>
-File: Complete_files/figure-latex/unnamed-chunk-5-2.pdf Graphic file (type pdf)
-
-<use Complete_files/figure-latex/unnamed-chunk-5-2.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-5-2.pdf  use
-d on input line 361.
-(pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-[5 <./Complete_files/figure-latex/unnamed-chunk-4-1.pdf> <./Complete_files/figu
-re-latex/unnamed-chunk-5-1.pdf> <./Complete_files/figure-latex/unnamed-chunk-5-
+[5 <./Template_files/figure-latex/unnamed-chunk-4-1.pdf> <./Template_files/figu
+re-latex/unnamed-chunk-5-1.pdf> <./Template_files/figure-latex/unnamed-chunk-5-
 2.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-71.
+63.
 (C:\Users\mgiac\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 371.
+(Font)              <10> on input line 363.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 371.
+(Font)              <7> on input line 363.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 371.
-<Complete_files/figure-latex/unnamed-chunk-6-1.pdf, id=110, 469.755pt x 325.215
+(Font)              <5> on input line 363.
+<Template_files/figure-latex/unnamed-chunk-6-1.pdf, id=108, 469.755pt x 325.215
 pt>
-File: Complete_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-6-1.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-6-1.pdf  use
-d on input line 414.
+<use Template_files/figure-latex/unnamed-chunk-6-1.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-6-1.pdf  use
+d on input line 406.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-6-2.pdf, id=111, 469.755pt x 325.215
+<Template_files/figure-latex/unnamed-chunk-6-2.pdf, id=109, 469.755pt x 325.215
 pt>
-File: Complete_files/figure-latex/unnamed-chunk-6-2.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-6-2.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-6-2.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-6-2.pdf  use
-d on input line 424.
+<use Template_files/figure-latex/unnamed-chunk-6-2.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-6-2.pdf  use
+d on input line 416.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-6-3.pdf, id=112, 469.755pt x 325.215
+<Template_files/figure-latex/unnamed-chunk-6-3.pdf, id=110, 469.755pt x 325.215
 pt>
-File: Complete_files/figure-latex/unnamed-chunk-6-3.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-6-3.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-6-3.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-6-3.pdf  use
-d on input line 425.
-(pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-
-Overfull \hbox (2.22104pt too wide) in paragraph at lines 424--426
-[][] [] 
- []
-
-[6 <./Complete_files/figure-latex/unnamed-chunk-6-1.pdf>]
-<Complete_files/figure-latex/unnamed-chunk-6-4.pdf, id=127, 469.755pt x 325.215
-pt>
-File: Complete_files/figure-latex/unnamed-chunk-6-4.pdf Graphic file (type pdf)
-
-<use Complete_files/figure-latex/unnamed-chunk-6-4.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-6-4.pdf  use
-d on input line 462.
-(pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-6-5.pdf, id=128, 469.755pt x 325.215
-pt>
-File: Complete_files/figure-latex/unnamed-chunk-6-5.pdf Graphic file (type pdf)
-
-<use Complete_files/figure-latex/unnamed-chunk-6-5.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-6-5.pdf  use
-d on input line 470.
-(pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-6-6.pdf, id=129, 469.755pt x 325.215
-pt>
-File: Complete_files/figure-latex/unnamed-chunk-6-6.pdf Graphic file (type pdf)
-
-<use Complete_files/figure-latex/unnamed-chunk-6-6.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-6-6.pdf  use
-d on input line 471.
+<use Template_files/figure-latex/unnamed-chunk-6-3.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-6-3.pdf  use
+d on input line 417.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 
-Overfull \hbox (2.22104pt too wide) in paragraph at lines 470--472
-[][] [] 
- []
-
-[7 <./Complete_files/figure-latex/unnamed-chunk-6-2.pdf> <./Complete_files/figu
-re-latex/unnamed-chunk-6-3.pdf> <./Complete_files/figure-latex/unnamed-chunk-6-
-4.pdf>]
-<Complete_files/figure-latex/unnamed-chunk-6-7.pdf, id=150, 469.755pt x 325.215
-pt>
-File: Complete_files/figure-latex/unnamed-chunk-6-7.pdf Graphic file (type pdf)
-
-<use Complete_files/figure-latex/unnamed-chunk-6-7.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-6-7.pdf  use
-d on input line 508.
-(pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-6-8.pdf, id=151, 469.755pt x 325.215
-pt>
-File: Complete_files/figure-latex/unnamed-chunk-6-8.pdf Graphic file (type pdf)
-
-<use Complete_files/figure-latex/unnamed-chunk-6-8.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-6-8.pdf  use
-d on input line 516.
-(pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-6-9.pdf, id=152, 469.755pt x 325.215
-pt>
-File: Complete_files/figure-latex/unnamed-chunk-6-9.pdf Graphic file (type pdf)
-
-<use Complete_files/figure-latex/unnamed-chunk-6-9.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-6-9.pdf  use
-d on input line 517.
-(pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-
-Overfull \hbox (2.22104pt too wide) in paragraph at lines 516--519
+Overfull \hbox (2.22104pt too wide) in paragraph at lines 416--419
 [][] []
  []
 
-[8 <./Complete_files/figure-latex/unnamed-chunk-6-5.pdf> <./Complete_files/figu
-re-latex/unnamed-chunk-6-6.pdf> <./Complete_files/figure-latex/unnamed-chunk-6-
-7.pdf>] [9 <./Complete_files/figure-latex/unnamed-chunk-6-8.pdf> <./Complete_fi
-les/figure-latex/unnamed-chunk-6-9.pdf>]
-<Complete_files/figure-latex/unnamed-chunk-7-1.pdf, id=190, 469.755pt x 325.215
+[6 <./Template_files/figure-latex/unnamed-chunk-6-1.pdf>] [7 <./Template_files/
+figure-latex/unnamed-chunk-6-2.pdf> <./Template_files/figure-latex/unnamed-chun
+k-6-3.pdf>]
+<Template_files/figure-latex/unnamed-chunk-7-1.pdf, id=144, 469.755pt x 325.215
 pt>
-File: Complete_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
+File: Template_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
-<use Complete_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-7-1.pdf  use
-d on input line 596.
+<use Template_files/figure-latex/unnamed-chunk-7-1.pdf>
+Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-7-1.pdf  use
+d on input line 499.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-7-2.pdf, id=191, 469.755pt x 325.215
-pt>
-File: Complete_files/figure-latex/unnamed-chunk-7-2.pdf Graphic file (type pdf)
-
-<use Complete_files/figure-latex/unnamed-chunk-7-2.pdf>
-Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-7-2.pdf  use
-d on input line 617.
-(pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-[10 <./Complete_files/figure-latex/unnamed-chunk-7-1.pdf> <./Complete_files/fig
-ure-latex/unnamed-chunk-7-2.pdf>] (Complete.aux) ) 
+[8 <./Template_files/figure-latex/unnamed-chunk-7-1.pdf>] (Template.aux) ) 
 Here is how much of TeX's memory you used:
- 14005 strings out of 478343
- 233214 string characters out of 2834742
- 560524 words of memory out of 3000000
- 32097 multiletter control sequences out of 15000+600000
+ 13936 strings out of 478343
+ 229840 string characters out of 2834742
+ 562479 words of memory out of 3000000
+ 32039 multiletter control sequences out of 15000+600000
  518136 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,5n,81p,1007b,598s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/mgiac/AppData/Local
-/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/mgiac/AppData/Local
-/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/mgiac/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/mgiac/AppData/
-Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/mgiac/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/mgiac/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/mgiac/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Users/mgi
-ac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/
-mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Use
-rs/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr5.pfb><C:/U
-sers/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:
-/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb
-><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtti1
-0.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/symbols/msbm10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Complete.pdf (10 pages, 343721 bytes).
+ 74i,5n,81p,1007b,610s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/U
+sers/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/U
+sers/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{
+C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}
+{C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}
+<C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.
+pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmm
+i10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
+/lmmi7.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmr10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmr17.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmr5.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/lm/lmr7.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmtt10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/lm/lmtti10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/mgiac/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Template.pdf (8 pages, 302590 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 28831 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 232 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 28788 words of extra memory for PDF output out of 29859 (max. 10000000)
 
