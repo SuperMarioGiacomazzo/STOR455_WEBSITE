@@ -125,10 +125,12 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | | [Assessing Conditions](Lectures/5 - Assessing Conditions.pdf)        | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_Conditions.zip)      | 1.3          |Ch.1: 2,10,12,22,24,26          |
 | Sep 12 | [Assessing Conditions (Cont.)](Lectures/5 - Assessing Conditions.pdf)        | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_Conditions.zip)      | 1.3          |Ch.1: 2,10,12,22,24,26          |
 |     |  [Transformations](Lectures/6 - Transformations.pdf)     |         | 1.4 |Ch.1: 27, 29abc, 31, 32abc |
-|    | [Outliers & Influential Points](Lectures/7 - Outliers and Influential Points.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Outliers_and_Influential_Points.zip)     | 1.5 | Ch.1: 33, 43, 47      |
-| Sep 14    |       |         |  |        |
-| Sep 19    |       |         |          |          |
-| Sep 21    |       |         |          |          |
+| Sep 14   | [Outliers & Influential Points](Lectures/7 - Outliers and Influential Points.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Outliers_and_Influential_Points.zip)     | 1.5 | Ch.1: 33, 43, 47      |
+|     | [Identifying Unusual Points in Regression](Lectures/8 - Identifying Unusal Points in Regression.pdf)       |         | 4.4  | Ch.4: 11abcd       |
+| Sep 19| Inference for Regression Slope       |         | 2.1          | Ch. 2: 15b, 17bcd, 19bc         |
+|    | Partitioning Variablility       | zip        |2.2          | Ch.2: 15a, 17a        |
+|Sep 21 |Regression and Correlation       |         | 2.3          | Ch.2: 21-22          |
+| | Intervals for Prediction         | zip          | 2.4 |Ch.2: 47, 49 |
 | Sep 26    |      |         |          |          |
 | Sep 28    | Midterm 1      |         |          |          |
 | Oct 3    |       |         |          |          |
@@ -150,21 +152,32 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Nov 28   |       |         |          |          |
 | Nov 30   |       |         |          |          |
 | Dec 5   |       |         |          |          |
+| Dec 12   | Final Exam (12PM - 3PM)     |         | Everything         |           |
 |   |     |             |  | |    |    
 
-# **Homework/Quiz Tracker**
+# **Assessment Tracker**
 
-Homeworks and Quizzes are sorted by the date assigned below. You can download the homework assignments in zipped folders using the links below. For the homework assignments, unzip the folder, open the RMD file, complete the assignment, knit to PDF, and submit PDF to Gradescope. For the quizzes, you will go to Canvas, and enter the access code given to you during class. The quiz must be completed by the end of class and the amount of time you have will vary based off the length of the quiz. 
+Homeworks, Quizzes, and Midterms are sorted by the date assigned below. 
 
-| Assigned | HW (HW) | Quiz (Q) | Due Date (Time) |
-|:------:|:--------:|:--------:|:------:|
-| Aug 24  | [HW1](Homework/HW1.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW1.zip)) |  | Aug 31 (2 PM) |
-| Aug 31  | [HW2](Homework/HW2.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW2.zip)) |  | Sep 7 (2 PM) |
-| Sep 7  | [HW3](Homework/HW3.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW3.zip)) |  | Sep 14 (2 PM) |
-| Sep 12 |  | Q1  | Sep 12 (3:15 PM) |
-| Sep 14  | HW4 |  | Sep 21 (2 PM) |
-| Sep 19 |  | Q2  | Sep 19 (3:15 PM) |
-| |     |             |  |
+You can download the homework assignments in zipped folders using the links below. For the homework assignments, unzip the folder, open the RMD file, complete the assignment, knit to PDF, and submit PDF to Gradescope. 
+
+For the quizzes, you will go to Canvas, and enter the access code given to you during class. The quiz must be completed by the end of class and the amount of time you have will vary based off the length of the quiz. 
+
+The midterms will be taken in Gradescope on the dates listed. You will have the entire class period to complete each Midterm. Midterms are expected to be completed by the end of class. 
+
+| Assigned | HW (HW) | Quiz (Q) | Midterm (M) | Due Date (Time) |
+|:------:|:--------:|:--------:|:------:|:------:|
+| Aug 24  | [HW1](Homework/HW1.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW1.zip)) |  | |Aug 31 (2 PM) |
+| Aug 31  | [HW2](Homework/HW2.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW2.zip)) |  | |Sep 7 (2 PM) |
+| Sep 7  | [HW3](Homework/HW3.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW3.zip)) |  | |Sep 14 (2 PM) |
+| Sep 12 |  | Q1  | |Sep 12 (3:15 PM) |
+| Sep 14  | HW4 |  | |Sep 21 (2 PM) |
+| Sep 19 |  | Q2  | |Sep 19 (3:15 PM) |
+| Sep 21  | HW5 |  | |Sep 28 (2 PM) |
+| Sep 28  |  |  | M1 |Sep 28 (3:15 PM) |
+| Oct 5  | HW6 |  | |Oct 12 (2 PM) |
+| Oct 10 |  | Q3  | |Oct 10 (3:15 PM) |
+| |     |             |  ||
 
 # **Additional resources**
 
