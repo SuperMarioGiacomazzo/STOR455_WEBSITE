@@ -124,8 +124,9 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 |     | [Conditions for a Simple Linear Model](Lectures/4 - Conditions for a Simple Linear Model.pdf)        |         | 1.2          | None          |
 | | [Assessing Conditions](Lectures/5 - Assessing Conditions.pdf)        | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_Conditions.zip)      | 1.3          |Ch.1: 2,10,12,22,24,26          |
 | Sep 12 | [Assessing Conditions (Cont.)](Lectures/5 - Assessing Conditions.pdf)        | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_Conditions.zip)      | 1.3          |Ch.1: 2,10,12,22,24,26          |
-|     |  [Transformations](Lectures/6 - Transformations.pdf)     |         | 1.4 |Ch.1: 27, 29abc, 31, 32abc |
-| Sep 14   | [Outliers & Influential Points](Lectures/7 - Outliers and Influential Points.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Outliers_and_Influential_Points.zip)     | 1.5 | Ch.1: 33, 43, 47      |
+| |  [Transformations](Lectures/6 - Transformations.pdf)  | | 1.4 |Ch.1: 27, 29abc, 31, 32abc |
+| Sep 14 |  [Transformations (Cont.)](Lectures/6 - Transformations.pdf)  | | 1.4 |Ch.1: 27, 29abc, 31, 32abc |
+|  | [Outliers & Influential Points](Lectures/7 - Outliers and Influential Points.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Outliers_and_Influential_Points.zip)     | 1.5 | Ch.1: 33, 43, 47      |
 |     | [Identifying Unusual Points in Regression](Lectures/8 - Identifying Unusal Points in Regression.pdf)       |         | 4.4  | Ch.4: 11abcd       |
 | Sep 19| Inference for Regression Slope       |         | 2.1          | Ch. 2: 15b, 17bcd, 19bc         |
 |    | Partitioning Variablility       | zip        |2.2          | Ch.2: 15a, 17a        |
