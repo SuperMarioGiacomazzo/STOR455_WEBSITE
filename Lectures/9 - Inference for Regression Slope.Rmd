@@ -1,0 +1,69 @@
+---
+title: "8 - Identifying Unusual Points in Regression"
+author: "Dr. Mario"
+date: '2023-09-11'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(Stat2Data)
+library(mosaic)
+
+data("PalmBeach")
+
+plot(Buchanan~Bush,data= PalmBeach,pch=16)
+abline(v=mean(PalmBeach$Bush),col="red",lty=2,lwd=2)
+points(x=PalmBeach$Bush[which(PalmBeach$County=="PALM BEACH")],
+      y=PalmBeach$Buchanan[which(PalmBeach$County=="PALM BEACH")],
+      cex=2,pch=15)
+points(x=PalmBeach$Bush[which(PalmBeach$County=="DADE")],
+      y=PalmBeach$Buchanan[which(PalmBeach$County=="DADE")],
+      cex=2,pch=17)
+```
+
+```{r}
+#Calculate Average Number of Votes for Bush
+avg.x = mean(PalmBeach$Bush)
+devsquared= (PalmBeach$Bush - avg.x)^2
+#Calculate Leverage
+Leverage = 1/nrow(PalmBeach) + devsquared/sum(devsquared)
+#Save Leverage Into Data
+PalmBeach$Leverage= Leverage
+#Print Data in Order of Leverage
+head(PalmBeach[order(PalmBeach$Leverage,decreasing=TRUE),],5)
+```
+
+```{r}
+#Fit Model
+vote.mod = lm(Buchanan~Bush, data=PalmBeach)
+#Extract Standard Error of Regression
+sigma.reg = summary(vote.mod)$sigma
+#Save Actual Residuals
+PalmBeach$Residual = vote.mod$residuals
+#Calculate and Save Standardized Residual
+PalmBeach$StdRes = PalmBeach$Residual/(sigma.reg*sqrt(1-PalmBeach$Leverage))
+#Calculate and Save Cook's Distance
+PalmBeach$CookD=cooks.distance(vote.mod)
+#Find Very Unusual Cook's Distance
+PalmBeach[which(PalmBeach$CookD>1),]
+```
+```{r}
+vote.mod = lm(Buchanan~Bush, data=PalmBeach)
+
+noDade = PalmBeach[which(PalmBeach$County!="DADE"),]
+vote.mod.noDade = lm(Buchanan~Bush, data=noDade)
+
+noPB = PalmBeach[which(PalmBeach$County!="PALM BEACH"),]
+vote.mod.noPB = lm(Buchanan~Bush, data=noPB)
+
+
+plot(Buchanan~Bush,data=PalmBeach)
+abline(vote.mod, col="blue",lwd=2)
+abline(vote.mod.noDade, col="green",lwd=2,lty=3)
+abline(vote.mod.noPB, col="red",lwd=2,lty=5)
+```
+
