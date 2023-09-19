@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.31)  11 SEP 2023 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.31)  19 SEP 2023 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -688,105 +688,105 @@ Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-3-6.pdf  use
 d on input line 192.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 
-Overfull \hbox (2.22104pt too wide) in paragraph at lines 191--194
-[][] []
+Overfull \hbox (2.22104pt too wide) in paragraph at lines 191--193
+[][] [] 
  []
 
 [3 <./Template_files/figure-latex/unnamed-chunk-3-5.pdf> <./Template_files/figu
 re-latex/unnamed-chunk-3-6.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-315.
+317.
 (C:\Users\mgiac\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<Template_files/figure-latex/unnamed-chunk-4-1.pdf, id=75, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-4-1.pdf, id=77, 469.755pt x 325.215p
 t>
 File: Template_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
 
 <use Template_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-4-1.pdf  use
-d on input line 332.
+d on input line 334.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 [4]
-<Template_files/figure-latex/unnamed-chunk-5-1.pdf, id=81, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-5-1.pdf, id=83, 469.755pt x 325.215p
 t>
 File: Template_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type pdf)
 
 <use Template_files/figure-latex/unnamed-chunk-5-1.pdf>
 Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-5-1.pdf  use
-d on input line 345.
+d on input line 347.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Template_files/figure-latex/unnamed-chunk-5-2.pdf, id=82, 469.755pt x 325.215p
+<Template_files/figure-latex/unnamed-chunk-5-2.pdf, id=84, 469.755pt x 325.215p
 t>
 File: Template_files/figure-latex/unnamed-chunk-5-2.pdf Graphic file (type pdf)
 
 <use Template_files/figure-latex/unnamed-chunk-5-2.pdf>
 Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-5-2.pdf  use
-d on input line 353.
+d on input line 355.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 [5 <./Template_files/figure-latex/unnamed-chunk-4-1.pdf> <./Template_files/figu
 re-latex/unnamed-chunk-5-1.pdf> <./Template_files/figure-latex/unnamed-chunk-5-
 2.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-63.
+65.
 (C:\Users\mgiac\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 363.
+(Font)              <10> on input line 365.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 363.
+(Font)              <7> on input line 365.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 363.
-<Template_files/figure-latex/unnamed-chunk-6-1.pdf, id=108, 469.755pt x 325.215
+(Font)              <5> on input line 365.
+<Template_files/figure-latex/unnamed-chunk-6-1.pdf, id=110, 469.755pt x 325.215
 pt>
 File: Template_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
 <use Template_files/figure-latex/unnamed-chunk-6-1.pdf>
 Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-6-1.pdf  use
-d on input line 406.
+d on input line 408.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Template_files/figure-latex/unnamed-chunk-6-2.pdf, id=109, 469.755pt x 325.215
+<Template_files/figure-latex/unnamed-chunk-6-2.pdf, id=111, 469.755pt x 325.215
 pt>
 File: Template_files/figure-latex/unnamed-chunk-6-2.pdf Graphic file (type pdf)
 
 <use Template_files/figure-latex/unnamed-chunk-6-2.pdf>
 Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-6-2.pdf  use
-d on input line 416.
+d on input line 418.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Template_files/figure-latex/unnamed-chunk-6-3.pdf, id=110, 469.755pt x 325.215
+<Template_files/figure-latex/unnamed-chunk-6-3.pdf, id=112, 469.755pt x 325.215
 pt>
 File: Template_files/figure-latex/unnamed-chunk-6-3.pdf Graphic file (type pdf)
 
 <use Template_files/figure-latex/unnamed-chunk-6-3.pdf>
 Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-6-3.pdf  use
-d on input line 417.
+d on input line 419.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 
-Overfull \hbox (2.22104pt too wide) in paragraph at lines 416--419
-[][] []
+Overfull \hbox (2.22104pt too wide) in paragraph at lines 418--420
+[][] [] 
  []
 
 [6 <./Template_files/figure-latex/unnamed-chunk-6-1.pdf>] [7 <./Template_files/
 figure-latex/unnamed-chunk-6-2.pdf> <./Template_files/figure-latex/unnamed-chun
 k-6-3.pdf>]
-<Template_files/figure-latex/unnamed-chunk-7-1.pdf, id=144, 469.755pt x 325.215
+<Template_files/figure-latex/unnamed-chunk-7-1.pdf, id=148, 469.755pt x 325.215
 pt>
 File: Template_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use Template_files/figure-latex/unnamed-chunk-7-1.pdf>
 Package pdftex.def Info: Template_files/figure-latex/unnamed-chunk-7-1.pdf  use
-d on input line 499.
+d on input line 504.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 [8 <./Template_files/figure-latex/unnamed-chunk-7-1.pdf>] (Template.aux) ) 
 Here is how much of TeX's memory you used:
- 13936 strings out of 478343
- 229840 string characters out of 2834742
- 562479 words of memory out of 3000000
- 32039 multiletter control sequences out of 15000+600000
+ 13944 strings out of 478343
+ 230008 string characters out of 2834742
+ 561594 words of memory out of 3000000
+ 32043 multiletter control sequences out of 15000+600000
  518136 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,5n,81p,1007b,610s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 74i,5n,81p,1007b,604s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/U
 sers/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/U
 sers/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{
@@ -804,9 +804,9 @@ pe1/public/lm/lmtt10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/lm/lmtti10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/mgiac/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Template.pdf (8 pages, 302590 bytes).
+Output written on Template.pdf (8 pages, 304204 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
- 28788 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 28804 words of extra memory for PDF output out of 29859 (max. 10000000)
 

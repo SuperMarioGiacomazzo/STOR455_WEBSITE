@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.31)  11 SEP 2023 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.31)  19 SEP 2023 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -825,37 +825,37 @@ Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-6-9.pdf  use
 d on input line 517.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 
-Overfull \hbox (2.22104pt too wide) in paragraph at lines 516--519
-[][] []
+Overfull \hbox (2.22104pt too wide) in paragraph at lines 516--518
+[][] [] 
  []
 
 [8 <./Complete_files/figure-latex/unnamed-chunk-6-5.pdf> <./Complete_files/figu
 re-latex/unnamed-chunk-6-6.pdf> <./Complete_files/figure-latex/unnamed-chunk-6-
 7.pdf>] [9 <./Complete_files/figure-latex/unnamed-chunk-6-8.pdf> <./Complete_fi
 les/figure-latex/unnamed-chunk-6-9.pdf>]
-<Complete_files/figure-latex/unnamed-chunk-7-1.pdf, id=190, 469.755pt x 325.215
+<Complete_files/figure-latex/unnamed-chunk-7-1.pdf, id=192, 469.755pt x 325.215
 pt>
 File: Complete_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type pdf)
 
 <use Complete_files/figure-latex/unnamed-chunk-7-1.pdf>
 Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-7-1.pdf  use
-d on input line 596.
+d on input line 599.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
-<Complete_files/figure-latex/unnamed-chunk-7-2.pdf, id=191, 469.755pt x 325.215
+<Complete_files/figure-latex/unnamed-chunk-7-2.pdf, id=193, 469.755pt x 325.215
 pt>
 File: Complete_files/figure-latex/unnamed-chunk-7-2.pdf Graphic file (type pdf)
 
 <use Complete_files/figure-latex/unnamed-chunk-7-2.pdf>
 Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-7-2.pdf  use
-d on input line 617.
+d on input line 620.
 (pdftex.def)             Requested size: 234.87692pt x 162.6071pt.
 [10 <./Complete_files/figure-latex/unnamed-chunk-7-1.pdf> <./Complete_files/fig
 ure-latex/unnamed-chunk-7-2.pdf>] (Complete.aux) ) 
 Here is how much of TeX's memory you used:
- 14005 strings out of 478343
- 233214 string characters out of 2834742
- 560524 words of memory out of 3000000
- 32097 multiletter control sequences out of 15000+600000
+ 14009 strings out of 478343
+ 233325 string characters out of 2834742
+ 560596 words of memory out of 3000000
+ 32099 multiletter control sequences out of 15000+600000
  518136 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,5n,81p,1007b,598s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -876,9 +876,9 @@ sers/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:
 0.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Complete.pdf (10 pages, 343721 bytes).
+Output written on Complete.pdf (10 pages, 344402 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 23 named destinations out of 1000 (max. 500000)
- 28831 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 28839 words of extra memory for PDF output out of 29859 (max. 10000000)
 

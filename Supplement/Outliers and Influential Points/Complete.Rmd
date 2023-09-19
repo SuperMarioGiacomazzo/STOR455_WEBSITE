@@ -58,6 +58,7 @@ plot(SpeciesModel, which=c(1,2)) #Only Want First Two
 #plot(SpeciesModel, 1:2) 
 
 ```
+
 # Identifying Outliers
 
 ```{r,out.width="50%"}
@@ -138,6 +139,7 @@ abline(TransMod)
 
 plot(TransMod,c(1,2))
 ```
+
 # Getting Fitted Values, Residuals, and Predictions
 
 Using the model we fit to make predictions:

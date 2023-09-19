@@ -129,8 +129,9 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 |  | [Outliers & Influential Points](Lectures/7 - Outliers and Influential Points.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Outliers_and_Influential_Points.zip)     | 1.5 | Ch.1: 33, 43, 47      |
 | Sep 19  | [Outliers & Influential Points (Cont.)](Lectures/7 - Outliers and Influential Points.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Outliers_and_Influential_Points.zip)     | 1.5 | Ch.1: 33, 43, 47      |
 |   | [Identifying Unusual Points in Regression](Lectures/8 - Identifying Unusual Points in Regression.pdf)       |         | 4.4  | Ch.4: 11abcd       |
-|Sep 21 | [Inference for Regression Slope](Lectures/9 - Inference for Regression Slope.pdf)       |         | 2.1          | Ch. 2: 15b, 17bcd, 19bc         |
-| | [Partitioning Variability](Lectures/10 - Partitioning Variability - ANOVA.pdf)       | zip        |2.2          | Ch.2: 15a, 17a        |
+|Sep 21| [Identifying Unusual Points in Regression](Lectures/8 - Identifying Unusual Points in Regression.pdf)       |         | 4.4  | Ch.4: 11abcd       |
+|| [Inference for Regression Slope](Lectures/9 - Inference for Regression Slope.pdf)       |         | 2.1          | Ch. 2: 15b, 17bcd, 19bc         |
+| | [Partitioning Variability](Lectures/10 - Partitioning Variability - ANOVA.pdf)      | zip        |2.2          | Ch.2: 15a, 17a  |
 |Sep 26 |Regression and Correlation       |         | 2.3          | Ch.2: 21-22          |
 | | Intervals for Prediction         | zip          | 2.4 |Ch.2: 47, 49 |
 | Sep 28    | Midterm 1      |         |          |          |
