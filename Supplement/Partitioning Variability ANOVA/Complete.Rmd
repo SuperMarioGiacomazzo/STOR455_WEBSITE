@@ -1,0 +1,57 @@
+---
+title: "Supplement for Lecture 10: Partitioning Variability"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+library(rmarkdown)
+library(tinytex)
+library(knitr)
+library(readr)
+library(mosaic) #Install Mosaic Package
+library(AER)
+```
+
+# Load Data 
+
+```{r, message=FALSE}
+data("Fatalities") # Load Data
+
+fatal = Fatalities[,c("fatal","pop","youngdrivers")]
+
+head(fatal)
+```
+
+Variables of Interest
+- *fatal* = Number of vehicle fatalities
+- *pop* = Population
+- *youngdrivers* = Percent of Drivers 15 - 24
+
+# Create New Variable to Adjust for Population
+
+```{r,fig.width=4,fig.height=3,eval=TRUE}
+#Consider scatterplot
+plot(x=fatal$pop,y=fatal$fatal)
+
+#Create New Variable Called adj_fatal
+fatal$adj_fatal = (fatal$fatal/fatal$pop)*1000
+
+#Remove Original Variable
+fatal$fatal = NULL
+
+#Preview Modified Dataset
+head(fatal)
+
+#Consider new scatterplot
+plot(x=fatal$pop,y=fatal$adj_fatal)
+```
+
+#Output from Simple Linear Regression
+
+```{r,eval=TRUE}
+
+```
+
