@@ -52,23 +52,20 @@ plot(x=fatal$pop,y=fatal$adj_fatal)
 
 # Output from Simple Linear Regression
 
-```{r,eval=TRUE}
+```{r,eval=FALSE}
 #Model for the relationship between fatalities and proportion of young drivers.
-
-#Create new variable for youngdrivers to help interpretation of slope
-fatal$yd=fatal$youngdrivers*100
 
 mod = lm(adj_fatal~youngdrivers,data=fatal)
 summary(mod)
-mod = lm(adj_fatal~yd,data=fatal)
-summary(mod)
+
+#Create new variable for youngdrivers to help interpretation of slope
+
 
 #Manually calculate p-value using the t-distribution
-2*(1-pt(4.407,334,lower.tail=T)) #Find area to right and multiply by 2
+   #Find area to right and multiply by 2
 
 #We have found significance. Hooray!!. Let's visualize the model.
-plot(adj_fatal~yd,data=fatal)
-abline(mod)
+
 
 ```
 
@@ -81,25 +78,24 @@ In class, we focused on when $x=1$. But we could do the same test for the interc
 
 # Confidence Interval for the Slope (and Intercept)
 
-```{r,eval=TRUE}
-confint(mod)
+```{r,eval=FALSE}
+
 ```
 
-**Interpretation of the confidence interal:** I am 95 percent confident, that the (average/expected/predicted) number of vehicle fatalities (per 1000) will increase by a number between 0.003 and 0.008 for every 1 percent increase in the percent of young drivers.
+**Interpretation of the confidence interal:** I am 95 percent confident, that the (average/expected/predicted) number of vehicle fatalities (per 1000) will increase by a number between BLANK1 and BLANK2 for every 1 percent increase in the percent of young drivers.
 
 # ANOVA
 
-```{r,eval=TRUE}
-anova(mod)
+```{r,eval=FALSE}
+
 
 #Manually find the p-value and check it matches
-pf(19.422,1,334,lower.tail=FALSE) #Want the area to the right of 19.422
+   #Want the area to the right of 19.422
 ```
 Notice how the p-value for the F-test is identical to the p-value from the t-test. Notice how this p-value is in the output for `summary()`. Also, the last row for the *Total* is not there.
 
-```{r,eval=TRUE}
+```{r,eval=FALSE}
 #Hand Calculation of SST
-sum((fatal$adj_fatal-mean(fatal$adj_fatal))^2)
 
 #Notice that this equals the sum from the ANOVA table
 0.0598+1.02930
