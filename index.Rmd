@@ -137,7 +137,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | | Intervals for Prediction         | zip          | 2.4 |Ch.2: 47, 49 |
 | Oct 5    |       |         |          |          |
 | Oct 10    |       |         |          |          |
-| Oct 12   |       |         |          |          |
+| Oct 12   | <span style="color:#EF426F">University Day</span>       |         |          |          |
 | Oct 17   |       |         |          |          |
 | Oct 19    | <span style="color:#EF426F">Fall Break</span>      |         |          |          |
 | Oct 24    |       |         |          |          |
