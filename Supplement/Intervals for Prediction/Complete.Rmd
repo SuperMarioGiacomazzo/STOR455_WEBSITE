@@ -1,0 +1,109 @@
+---
+title: "Supplement for Lecture 10: Partitioning Variability"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999) #Prevents the use of scientific notation
+library(rmarkdown)
+library(tinytex)
+library(knitr)
+library(readr)
+library(mosaic) #Install Mosaic Package
+library(AER)
+```
+
+# Load Data 
+
+```{r, message=FALSE}
+data("Fatalities") # Load Data
+
+fatal = Fatalities[,c("fatal","pop","youngdrivers")]
+
+head(fatal)
+```
+
+Variables of Interest
+- *fatal* = Number of vehicle fatalities
+- *pop* = Population
+- *youngdrivers* = Percent of Drivers 15 - 24
+
+# Create New Variable to Adjust for Population
+
+```{r,fig.width=4,fig.height=3,eval=TRUE}
+#Consider scatterplot
+plot(x=fatal$pop,y=fatal$fatal)
+
+#Create New Variable Called adj_fatal
+fatal$adj_fatal = (fatal$fatal/fatal$pop)*1000
+
+#Remove Original Variable
+fatal$fatal = NULL
+
+#Preview Modified Dataset
+head(fatal)
+
+#Consider new scatterplot
+plot(x=fatal$pop,y=fatal$adj_fatal)
+```
+
+# Output from Simple Linear Regression
+
+```{r,eval=TRUE}
+#Model for the relationship between fatalities and proportion of young drivers.
+
+#Create new variable for youngdrivers to help interpretation of slope
+fatal$yd=fatal$youngdrivers*100
+
+mod = lm(adj_fatal~youngdrivers,data=fatal)
+summary(mod)
+mod = lm(adj_fatal~yd,data=fatal)
+summary(mod)
+
+#Manually calculate p-value using the t-distribution
+2*(1-pt(4.407,334,lower.tail=T)) #Find area to right and multiply by 2
+
+#We have found significance. Hooray!!. Let's visualize the model.
+plot(adj_fatal~yd,data=fatal)
+abline(mod)
+
+```
+
+Focus on the "t value" and "Pr(>|t|)". These are your test statistics and p-values for testing the following hypotheses:
+
+$$H_0:\beta_x=0$$
+$$H_a:\beta_x\neq 0$$
+In class, we focused on when $x=1$. But we could do the same test for the intercept when $x=0$.
+
+
+# Confidence Interval for the Slope (and Intercept)
+
+```{r,eval=TRUE}
+confint(mod)
+```
+
+**Interpretation of the confidence interal:** I am 95 percent confident, that the (average/expected/predicted) number of vehicle fatalities (per 1000) will increase by a number between 0.003 and 0.008 for every 1 percent increase in the percent of young drivers.
+
+# ANOVA
+
+```{r,eval=TRUE}
+anova(mod)
+
+#Manually find the p-value and check it matches
+pf(19.422,1,334,lower.tail=FALSE) #Want the area to the right of 19.422
+```
+Notice how the p-value for the F-test is identical to the p-value from the t-test. Notice how this p-value is in the output for `summary()`. Also, the last row for the *Total* is not there.
+
+```{r,eval=TRUE}
+#Hand Calculation of SST
+sum((fatal$adj_fatal-mean(fatal$adj_fatal))^2)
+
+#Notice that this equals the sum from the ANOVA table
+0.0598+1.02930
+```
+
+
+
