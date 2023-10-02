@@ -136,7 +136,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 |Oct 3 | [Partitioning Variability (Cont.)](Lectures/10 - Partitioning Variability - ANOVA.pdf)      | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Partitioning_Variability_ANOVA.zip)        |2.2          | Ch.2: 15a, 17a  |
 || **Review of Midterm 1**      |         | 2.3          | Ch.2: 21-22          |
 ||[Regression and Correlation](Lectures/11 - Regression and Correlation.pdf)      |         | 2.3          | Ch.2: 21-22          |
-| Oct 5 | Intervals for Prediction         | zip          | 2.4 |Ch.2: 47, 49 |
+| Oct 5 | [Intervals for Prediction](Lectures/12 - Intervals for Prediction.pdf)         | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Intervals_for_Prediction.zip)          | 2.4 |Ch.2: 47, 49 |
 | Oct 10    |       |         |          |          |
 | Oct 12   | <span style="color:#EF426F">University Day</span>       |         |          |          |
 | Oct 17   |       |         |          |          |
