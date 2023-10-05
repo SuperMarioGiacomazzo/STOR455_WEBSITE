@@ -1,5 +1,5 @@
 ---
-title: "Supplement for Lecture 10: Partitioning Variability"
+title: "Supplement for Lecture 12: Intervals for Prediction"
 output:
   pdf_document: default
 ---
@@ -40,7 +40,7 @@ head(fatal)
 
 # Fit Linear Regression Model
 
-```{r,eval=TRUE}
+```{r,eval=FALSE}
 #Fit Linear Regression Model
 mod = lm(adj_fatal~yd,data=fatal)
 
@@ -51,24 +51,16 @@ summary(mod)
 anova(mod)
 
 #Relationship between test statistics between both tests
-summary.out=summary(mod)
-tstat=summary.out$coefficients[2,3]
-Fstat=as.numeric(summary.out$fstatistic[1])
 
-tstat^2
-Fstat
 ```
 
 # Correlation Test and R^2
 
-```{r,eval=TRUE}
+```{r,eval=FALSE}
 # Correlation Test (Compare p-value to previous p-values)
-cor.test(x=fatal$adj_fatal,y=fatal$yd)
-cor.test(y=fatal$adj_fatal,x=fatal$yd)
 
 # R-squared
-cor(x=fatal$adj_fatal,y=fatal$yd)^2
-summary.out$r.squared
+
 ```
 
 **Interpretation:** We are able to explain 5% of the variation in the number of fatalities per 1000 people in a state by the simple linear regression model based on the percent of young drivers (ages 15-24) in state.
@@ -76,20 +68,20 @@ summary.out$r.squared
 
 # Prediction for a State Where 20% of the drivers are ages 15 to 24
 
-```{r,eval=TRUE}
+```{r,eval=FALSE}
 #Are We Extrapolating?
 quantile(x=fatal$yd)
 boxplot(x=fatal$yd)
 
 #Predict when yd=0.2
 xstar=20
-fit.yint = summary.out$coefficients[1,1]
-fit.slope = summary.out$coefficients[2,1]
+fit.yint = 
+fit.slope = 
 
 fit.yint+fit.slope*xstar
 
 #Alternative Way to predict when yd=20 or yd=15
-unknown = data.frame(yd=c(20,15))
+unknown = data.frame()
 predict(mod,newdata=unknown)
 
 #Plot of predictions
@@ -105,23 +97,22 @@ points(x=c(20,15),y=predict(mod,newdata=unknown),pch=17,cex=3)
 
 # Confidence Interval
 
-```{r,eval=TRUE}
-predict(mod,unknown,interval="confidence")
+```{r,eval=FALSE}
+predict()
 ```
 
 **Interpretation of Confidence Interval:** We are 95% confident that the average number vehicle fatalities per 1000 people in state is somewhere between 0.20 and 0.22 whenever a state's proportion of young drivers is 20%.
 
 # Prediction Interval
 
-```{r,eval=TRUE}
-predict(mod,unknown,interval="prediction")
+```{r,eval=FALSE}
 ```
 
 **Interpretation of Prediction Interval:** For a state with 20% of the drivers being young (ages 15-24), I am 95% confident that the actual number of vehicle fatalities per 1000 people in that specific state is somewhere between 0.10 and 0.32.
 
 # Comparison of Both Intervals
 
-```{r,eval=TRUE}
+```{r,eval=FALSE}
 CIPIPlot
 CIPIPlot(x=fatal$yd, y=fatal$adj_fatal)
 ```

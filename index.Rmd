@@ -140,12 +140,15 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 |Oct 10| [Intervals for Prediction (Cont.)](Lectures/12 - Intervals for Prediction.pdf)         | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Intervals_for_Prediction.zip)          | 2.4 |Ch.2: 47, 49 |
 | | Multiple Linear Regression Model       |         | 3.1         |      |
 | Oct 12   | <span style="color:#EF426F">University Day</span>       |         |          |          |
-| Oct 17   | Assessing a Multiple Regression Model      |         | 3.2         |          |
-|   | Comparing Two Regression Lines     |         | 3.3         |          |
+| Oct 17   | Assessing a Multiple Regression Model      | zip        | 3.2         |Ch. 3: 19-21          |
+|   | Correlated Predictors    |         | 3.5      |          |
 | Oct 19    | <span style="color:#EF426F">Fall Break</span>      |         |          |          |
-| Oct 24    |       |         |          |          |
-| Oct 26    |       |         |          |          |
-| Oct 31    |       |         |          |          |
+| Oct 24    | Techniques for Choosing Predictors      |   zip      | 4.2         | Ch. 4: 4-6         |
+|   | Comparing Two Regression Lines    |         | 3.3       | Ch. 3: 30, 31,48         |
+| Oct 26    | Coding Categorical Predictors      |   zip      |   4.5       |          |
+| | New Predictors from Old     |         |   3.4       |          |
+| Oct 31 | Testing Subsets of Predictors   |         |   3.6       | Ch. 3: 35-38,41-42          |
+|     | Cross-validation      |  zip       |   4.3       | Ch. 4: 8-9         |
 | Nov 2   | **Midterm 2**      |         |          |          |
 | Nov 7   |       |         |          |          |
 | Nov 9   |       |         |          |          |
