@@ -1,0 +1,128 @@
+---
+title: "Supplement for Lecture 14: Assessing a Multiple Regression Model"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999) #Prevents the use of scientific notation
+library(rmarkdown)
+library(tinytex)
+library(knitr)
+library(readr)
+library(mosaic) 
+library(AER)
+
+source("https://raw.githubusercontent.com/JA-McLean/STOR455/master/scripts/anova455.R") #For modified ANOVA table from Dr. McLean
+```
+
+# Load and Clean Data 
+
+Variables of Interest in `fatal`
+- *adj_fatal* = Number of Vehicle Fatalities Per 1,000 People
+- *youngdrivers* = Percent of Drivers 15 - 24
+- *year* = Year
+- *unemp* = Unemployment Rate
+- *beertax* = Tax on Case of Beer
+- *miles* = Average Miles Per Driver
+
+
+```{r, message=FALSE}
+data("Fatalities") # Load Data
+
+fatal = Fatalities[,c("fatal","pop","youngdrivers","year",
+                      "unemp","beertax","miles")]
+fatal$adj_fatal = (fatal$fatal/fatal$pop)*1000
+fatal$youngdrivers=fatal$youngdrivers*100
+fatal$year = as.numeric(fatal$year) #Need to Convert to Numeric Variable (Currently a Factor Variable)
+
+fatal$fatal=NULL
+fatal$pop=NULL
+
+#Rearrange Variables (Put "Y" variable at Beginning)
+fatal=fatal[,c(6,1:5)]
+
+#Preview Data
+head(fatal)
+```
+
+# Fit Linear Regression Model
+
+```{r,eval=FALSE}
+#Fit Linear Regression Model
+mod = lm(,data=fatal)
+
+#Summary from Model
+summary(mod)
+
+#Pulling Out R-squared Adjusted R-squared
+sum.out = summary(mod)
+
+sum.out$r.squared
+
+#Calculate R-squared by hand
+
+```
+
+**Interpretation of t-Tests:** Only predictor variable where we don't have enough evidence to conclude that it's coefficient/slope is significantly different from 0 is  *year*.
+
+**Interpretation of Slope for *miles*:** Holding all other predictor variables (*youngdrivers, year, unemp*, and *beertax*) constant, the average number of vehicle fatalities per 1000 people in a state will increase by 0.0000015960 for every 1 unit increase in the average miles per driver in that state. 
+
+**Alternative Interpretation of Slope for *miles*:** Holding all other predictor variables (*youngdrivers, year, unemp*, and *beertax*) constant, the average number of vehicle fatalities per 1000 people in a state will increase by 0.0015960 if the average miles per driver in that state increased by 1,000. 
+
+# Difference Between R-squared and Adjusted R-squared
+
+```{r,eval=TRUE}
+mod.without.year = lm(adj_fatal~youngdrivers + unemp + beertax + miles,data=fatal)
+mod.with.year = lm(adj_fatal~youngdrivers + year + unemp + beertax + miles,data=fatal)
+
+#Compare R-squared (Increases)
+summary(mod.without.year)$r.squared - summary(mod.with.year)$r.squared
+
+
+#Compare adjusted R-squared (Increases by Slightly Less)
+summary(mod.without.year)$adj.r.squared - summary(mod.with.year)$adj.r.squared
+
+```
+
+# ANOVA Table
+
+```{r,eval=FALSE}
+
+#Run anova() function and notice how it is broken down by predictor variable. This is called sequential sum of squares.
+#P-value in F-Test is Actually Testing if the Previous Model is significantly different than the Previous Model with the variable added. 
+
+anova(mod)
+
+#Modified ANOVA function (anova455)
+
+
+#Another Option for Getting F-statistic
+mod.none=lm(,data=fatal) #Intercept Only
+mod.full=lm(, data=fatal) #Full Model Includes Intercept
+
+#Table has all the same information but is presented differently.
+anova(mod.none,mod.full)
+
+```
+
+#Confidence Intervals and Prediction Intervals
+
+```{r,eval=FALSE}
+#Remove non-significant variable year
+mod.final = lm(,data=fatal)
+summary(mod.final)
+
+#Set Values of Predictor Variables to Predict Y at
+youngdrivers = 
+unemp = 
+beertax = 
+miles = 
+
+predict(mod,newdata=data.frame(youngdrivers,unemp,beertax,miles),interval="confidence")
+
+predict(mod,newdata=data.frame(youngdrivers,unemp,beertax,miles),interval="prediction")
+```
+

@@ -138,7 +138,8 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 |Oct 5|[Regression and Correlation](Lectures/11 - Regression and Correlation.pdf)      |         | 2.3          | Ch.2: 21-22          |
 || [Intervals for Prediction](Lectures/12 - Intervals for Prediction.pdf)         | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Intervals_for_Prediction.zip)          | 2.4 |Ch.2: 47, 49 |
 |Oct 10| [Intervals for Prediction (Cont.)](Lectures/12 - Intervals for Prediction.pdf)         | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Intervals_for_Prediction.zip)          | 2.4 |Ch.2: 47, 49 |
-| | Multiple Linear Regression Model       |         | 3.1         |      |
+| | [Multiple Linear Regression Model](Lectures/13 - Multiple Linear Regression.pdf)  |         | 3.1         |      |
+| | [Assessing a Multiple Regression Model](Lectures/14 - Assessing a Multiple Regression Model.pdf)      | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_a_Multiple_Regression_Model.zip)        | 3.2         |Ch. 3: 19-21          |
 | Oct 12   | <span style="color:#EF426F">University Day</span>       |         |          |          |
 | Oct 17   | Assessing a Multiple Regression Model      | zip        | 3.2         |Ch. 3: 19-21          |
 |   | Correlated Predictors    |         | 3.5      |          |
