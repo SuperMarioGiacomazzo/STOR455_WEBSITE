@@ -1,0 +1,44 @@
+---
+title: "8 - Identifying Unusual Points in Regression"
+author: "Dr. Mario"
+date: '2023-09-11'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(Stat2Data)
+library(mosaic)
+
+data("Houses")
+
+mod = lm(Price ~ Size + Lot, data=Houses)
+Houses$Predicted = fitted(mod)
+
+plot(x=Houses$Price,y=Houses$Predicted,
+     xlim=c(100000,400000),
+     ylim=c(100000,400000))
+abline(a=0,b=1,lwd=3,lty=3)
+```
+
+```{r}
+summary(mod)
+```
+
+```{r}
+mod.size = lm(Price~Size, data=Houses)
+summary(mod.size)
+```
+
+```{r}
+mod.lot = lm(Price~Lot, data=Houses)
+summary(mod.lot)
+```
+
+```{r}
+cor(Houses$Lot,Houses$Size)
+```
+

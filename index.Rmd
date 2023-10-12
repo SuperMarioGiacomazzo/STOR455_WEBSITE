@@ -141,8 +141,8 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | | [Multiple Linear Regression Model](Lectures/13 - Multiple Linear Regression.pdf)  |         | 3.1         |      |
 | | [Assessing a Multiple Regression Model](Lectures/14 - Assessing a Multiple Regression Model.pdf)      | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_a_Multiple_Regression_Model.zip)        | 3.2         |Ch. 3: 19-21          |
 | Oct 12   | <span style="color:#EF426F">University Day</span>       |         |          |          |
-| Oct 17   | Assessing a Multiple Regression Model      | zip        | 3.2         |Ch. 3: 19-21          |
-|   | Correlated Predictors    |         | 3.5      |          |
+| Oct 17   | [Assessing a Multiple Regression Model](Lectures/15 - Assessing a Multiple Regression Model.pdf)      | zip        | 3.2         |Ch. 3: 19-21          |
+|   | [Correlated Predictors](Lectures/16 - Assessing a Multiple Regression Model.pdf)    |         | 3.5      |          |
 | Oct 19    | <span style="color:#EF426F">Fall Break</span>      |         |          |          |
 | Oct 24    | Techniques for Choosing Predictors      |   zip      | 4.2         | Ch. 4: 4-6         |
 |   | Comparing Two Regression Lines    |         | 3.3       | Ch. 3: 30, 31,48         |
