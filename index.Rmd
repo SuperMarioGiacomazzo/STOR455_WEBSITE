@@ -186,7 +186,7 @@ The midterms will be taken in Gradescope on the dates listed. You will have the 
 | Oct 10 |  | Q3  | |Oct 10 (3:15 PM) |
 | Oct 5  | [HW6](Homework/HW6.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW6.zip)) |  | |Oct 19 (2 PM) |
 | Oct 24 |  | Q4  | |Oct 24 (3:15 PM) |
-| Oct 19  | HW7 |  | |Oct 26 (2 PM) |
+| Oct 19  | [HW7](Homework/HW7.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW7.zip)) |  | |Oct 26 (2 PM) |
 | Oct 31 |  | Q5  | |Oct 31 (3:15 PM) |
 | Oct 26  | HW8 |  | |Nov 2 (2 PM) |
 | |     |             |  ||
