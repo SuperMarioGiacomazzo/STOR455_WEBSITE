@@ -35,33 +35,33 @@ head(bf)
 
 # Check for Multicollinearity 
 
-```{r, warning=FALSE}
+```{r, warning=FALSE, eval=FALSE}
 # Correlation Matrix from Base R
-round(cor(bf),4)
+
 
 # Tile Plot of Correlation Matrix (Correlogram) from corrplot package
-corrplot(cor(bf), type="upper")
+
 
 #Scatterplots of Bodyfat Variable with Each Other Predictor
-plot(Bodyfat~., data=bf)
+
 
 # Cool Visual from PerformanceAnalytics package
-chart.Correlation(bf[,-1], histogram=TRUE)
+
 ```
 # Variance Inflation Factor
 
-```{r}
-mod.full = lm(Bodyfat~.,data=bf)
+```{r, eval=FALSE}
+mod.full = lm(COMPLETE,data=bf)
 summary(mod.full)
 plot(mod.full)
 vif(mod.full) # From car package
 ```
 
-```{r}
-mod.noWeight = lm(Bodyfat~.-Weight,data=bf)
+```{r, eval=FALSE}
+mod.noWeight = lm(COMPLETE,data=bf)
 vif(mod.noWeight)
 
-mod.noWeightChest = lm(Bodyfat~.-Weight-Chest,data=bf)
+mod.noWeightChest = lm(COMPLETE,data=bf)
 vif(mod.noWeightChest)
 ```
 
@@ -69,51 +69,50 @@ vif(mod.noWeightChest)
 
 The `regsubsets()` function fits all subset models up to a maximum number of variables. Notice the `nvmax` argument. The asterisk indicates which variables are included in the best model for each possible choice for $k$.
 
-```{r}
-all = regsubsets(Bodyfat~., data = bf) #From leaps package
+```{r, eval=FALSE}
+all =  #From leaps package
 summary(all)
 
-all2 = regsubsets(Bodyfat~., data = bf,nvmax=9) #From leaps package
+all2 =  #From leaps package
 summary(all2)
 ```
 
 Now we identify the "best" model based off the criteria R-Squared, adjusted R-Squared, and Mallow's Cp. We can use the `ShowSubsets()` function created by Dr. McLean.
 
-```{r}
-out2 = ShowSubsets(all2)
-out2
+```{r, eval=FALSE}
+
 
 # Best Model According to R-Squared
-out2[which.max(out2$Rsq),]
+out2[COMPLETE,]
 
 # Best Model According to Adjusted R-Squared
-out2[which.max(out2$adjRsq),]
+out2[COMPLETE,]
 
 # Best Model According to Mallows Cp
-out2[which.min(out2$Cp),]
+out2[COMPLETE,]
 ```
 
 We can also tell the function using `nbest` the number of top models for each choice of $k$ that we want to see in the output. We can also calculate the BIC for each of the models and identify the best model according to BIC.
 
-```{r}
-all3 = regsubsets(Bodyfat~., data = BodyFat, nvmax=9, nbest=2)
+```{r, eval=FALSE}
+all3 = COMPLETE
 out3 = ShowSubsets(all3) 
 out3
 
 #Get BIC for each of the models
-summ.all3 = summary(all3)
+summ.all3 = COMPLETE
 summ.all3$bic
 
 #Find Best Model According to BIC
 out3[which.min(summ.all3$bic),]
 
 #Calculated adjusted R-squared by hand
-1-(1-0.7471)*((100-1)/(100-3-1)) #NOtice these equals the adjusted R-Squared in the BIC Model
+1-(1-0.7471)*((100-1)/(100-3-1)) #Notice these equals the adjusted R-Squared in the BIC Model
 ```
 
 Now we fit our "best" models according to adjusted R-squared/Mallow's Cp and BIC.
 
-```{r}
+```{r, eval=FALSE}
 mod.rsqmallow = lm(Bodyfat ~ Age + Weight + Abdomen + Wrist, data=bf)
 plot(mod.rsqmallow)
 vif(mod.rsqmallow)
@@ -128,34 +127,37 @@ vif(mod.bic)
 
 Built-in `step()` function doesn't use p-values to determine what variables to remove or keep. It uses the AIC measurement which is similar to BIC. Let's first look at backward's elimination.
 
-```{r}
-Full = lm(Bodyfat~.,data=bf)
-back.out = step(Full, direction="backward")
+```{r, eval=FALSE}
+
+
+
 summary(back.out)
 vif(back.out)
 ```
 
 Now let's look at forward selection. In this case, we need to start by initiating the empty model and telling the `step()` function to consider all models up to possibly the full model.
 
-```{r}
-Empty = lm(Bodyfat~1,data=bf)
-forward.out = step(Empty,scope=list(upper=Full),direction="forward",trace=F)
+```{r, eval=FALSE}
+
+
+
 summary(forward.out)
 vif(forward.out)
 ```
 
 Now, we specify the `direction="both"` to conduct stepwise regression where variables can be both added and removed.
 
-```{r}
-Empty = lm(Bodyfat~1,data=bf)
-step.out = step(Empty,scope=list(upper=Full),direction="both",trace=F)
+```{r, eval=FALSE}
+
+
+
 summary(step.out)
 vif(step.out)
 ```
 
 # All Models Summarized
 
-```{r}
+```{r, eval=FALSE}
 mod.full
 mod.noWeight
 mod.noWeightChest

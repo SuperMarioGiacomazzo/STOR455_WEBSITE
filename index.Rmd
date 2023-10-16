@@ -144,7 +144,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Oct 17   | [Assessing a Multiple Regression Model (Cont.)](Lectures/14 - Assessing a Multiple Regression Model.pdf)      | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_a_Multiple_Regression_Model.zip)        | 3.2         |Ch. 3: 19-21          |
 |   | [Correlated Predictors](Lectures/15 - Correlated Predictors.pdf)    |         | 3.5      |          |
 | Oct 19    | <span style="color:#EF426F">Fall Break</span>      |         |          |          |
-| Oct 24    | [Techniques for Choosing Predictors](Lectures/16 - Techniques for Choosing Predictors.pdf)       |   zip      | 4.2         | Ch. 4: 4-6         |
+| Oct 24    | [Techniques for Choosing Predictors](Lectures/16 - Techniques for Choosing Predictors.pdf)       |   [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Techniques_for_Choosing_Predictors.zip)       | 4.2         | Ch. 4: 4-6         |
 |   | Comparing Two Regression Lines    |         | 3.3       | Ch. 3: 30, 31,48         |
 | Oct 26    | Coding Categorical Predictors      |   zip      |   4.5       |          |
 | | New Predictors from Old     |         |   3.4       |          |
