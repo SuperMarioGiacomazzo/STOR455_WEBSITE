@@ -1,0 +1,97 @@
+---
+title: "17 - Comparing Two Regression Lines"
+author: "Dr. Mario"
+date: '2023-09-11'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(mosaic)
+
+lego = read.csv("lego.csv")
+lego_2theme = subset(lego, Theme == "Star Wars"| Theme == "Friends")
+lego_2theme = lego_2theme[,c("Theme","Pieces","Amazon_Price")]
+str(lego_2theme)
+```
+
+```{r}
+boxplot(Amazon_Price ~ Theme, data=lego_2theme)
+var(lego_2theme$Amazon_Price[which(lego_2theme$Theme=="Friends")],na.rm=T)
+var(lego_2theme$Amazon_Price[which(lego_2theme$Theme=="Star Wars")],na.rm=T)
+```
+
+
+```{r}
+t.test(Amazon_Price ~ Theme,var.equal=TRUE, data=lego_2theme)
+```
+
+```{r}
+mod = lm(Amazon_Price ~ Theme, data=lego_2theme)
+summary(mod)
+confint(mod)
+```
+
+```{r}
+mod2 = lm(Amazon_Price ~Pieces + Theme, data= lego_2theme)
+summary(mod2)
+confint(mod2)
+```
+
+```{r}
+plot(Amazon_Price~Pieces, col="red", 
+     data=subset(lego_2theme,Theme=='Star Wars'))
+
+points(Amazon_Price~Pieces, col="blue",
+       data=subset(lego_2theme,Theme=='Friends'))
+
+B_Int = summary(mod2)$coef[1,1]
+B_Pieces = summary(mod2)$coef[2,1]
+B_Theme = summary(mod2)$coef[3,1]
+
+abline(
+  B_Int,
+  B_Pieces, 
+  col = "blue", 
+  )
+
+abline(
+  B_Int + B_Theme,
+  B_Pieces,
+  col = "red", 
+  )
+```
+
+```{r}
+mod3 = lm(Amazon_Price ~Pieces + Theme + Pieces*Theme, data= lego_2theme)
+summary(mod3)
+```
+
+```{r}
+plot(Amazon_Price~Pieces, col="red", 
+     data=subset(lego_2theme,Theme=='Star Wars'))
+
+points(Amazon_Price~Pieces, col="blue",
+       data=subset(lego_2theme,Theme=='Friends'))
+
+B_Int = summary(mod3)$coef[1,1]
+B_Pieces = summary(mod3)$coef[2,1]
+B_Theme = summary(mod3)$coef[3,1]
+B_PiecesXTheme = summary(mod3)$coef[4,1]
+
+abline(
+  B_Int,
+  B_Pieces, 
+  col = "blue", 
+  )
+
+abline(
+  B_Int + B_Theme,
+  B_Pieces + B_PiecesXTheme,
+  col = "red", 
+  )
+```
+

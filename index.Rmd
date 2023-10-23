@@ -134,7 +134,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 |Sep 26 | [Partitioning Variability ](Lectures/10 - Partitioning Variability - ANOVA.pdf)      | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Partitioning_Variability_ANOVA.zip)        |2.2          | Ch.2: 15a, 17a  |
 | Sep 28    | **Midterm 1**      |         |          |          |
 |Oct 3 | [Partitioning Variability (Cont.)](Lectures/10 - Partitioning Variability - ANOVA.pdf)      | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Partitioning_Variability_ANOVA.zip)        |2.2          | Ch.2: 15a, 17a  |
-|| **Review of Midterm 1**      |         | 2.3          | Ch.2: 21-22          |
+|| **Review of Midterm 1**      |         |           |          |
 |Oct 5|[Regression and Correlation](Lectures/11 - Regression and Correlation.pdf)      |         | 2.3          | Ch.2: 21-22          |
 || [Intervals for Prediction](Lectures/12 - Intervals for Prediction.pdf)         | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Intervals_for_Prediction.zip)          | 2.4 |Ch.2: 47, 49 |
 |Oct 10| [Intervals for Prediction (Cont.)](Lectures/12 - Intervals for Prediction.pdf)         | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Intervals_for_Prediction.zip)          | 2.4 |Ch.2: 47, 49 |
@@ -144,9 +144,10 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Oct 17   | [Assessing a Multiple Regression Model (Cont.)](Lectures/14 - Assessing a Multiple Regression Model.pdf)      | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Assessing_a_Multiple_Regression_Model.zip)        | 3.2         |Ch. 3: 19-21          |
 |   | [Correlated Predictors](Lectures/15 - Correlated Predictors.pdf)    |         | 3.5      |          |
 | Oct 19    | <span style="color:#EF426F">Fall Break</span>      |         |          |          |
-| Oct 24    | [Techniques for Choosing Predictors](Lectures/16 - Techniques for Choosing Predictors.pdf)       |   [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Techniques_for_Choosing_Predictors.zip)       | 4.2         | Ch. 4: 4-6         |
-|   | Comparing Two Regression Lines    |         | 3.3       | Ch. 3: 30, 31,48         |
-| Oct 26    | Coding Categorical Predictors      |   zip      |   4.5       |          |
+| Oct 24   | [Correlated Predictors](Lectures/15 - Correlated Predictors.pdf)    |         | 3.5      |          |
+| | [Techniques for Choosing Predictors](Lectures/16 - Techniques for Choosing Predictors.pdf)       |   [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Techniques_for_Choosing_Predictors.zip)       | 4.2         | Ch. 4: 4-6         |
+| Oct 26   | [Comparing Two Regression Lines](Lectures/17 - Comparing Two Regression Lines.pdf)    |         | 3.3       | Ch. 3: 30, 31,48         |
+|    | Coding Categorical Predictors      |   zip      |   4.5       |          |
 | | New Predictors from Old     |         |   3.4       |          |
 | Oct 31 | Testing Subsets of Predictors   |         |   3.6       | Ch. 3: 35-38,41-42          |
 |     | Cross-validation      |  zip       |   4.3       | Ch. 4: 8-9         |
