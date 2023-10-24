@@ -1,5 +1,5 @@
 ---
-title: "Supplement for Lecture 17: Techniques for Choosing Predictors"
+title: "Supplement for Lecture 16: Techniques for Choosing Predictors"
 output:
   pdf_document: default
 ---
