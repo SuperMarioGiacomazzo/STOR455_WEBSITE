@@ -1,0 +1,129 @@
+---
+title: "Homework 8: Model Selection With Categorical Variables"
+author: "FIRSTNAME LASTNAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+library(rmarkdown)
+library(tinytex)
+library(knitr)
+library(mosaic)
+library(readr)
+library(leaps)
+
+source("https://raw.githubusercontent.com/JA-McLean/STOR455/master/scripts/ShowSubsets.R") 
+```
+
+# Instructions:
+
+The purpose of this homework assignment is to practice doing model selection for multiple linear regression models that contain combinations of categorical and numerical predictor variables. Make sure you read each question carefully. In each question, I will give you a task to do, and I will tell you what I want you to output. You can write as much code as you want in each code chunk, but make sure you complete the task and only print the output I asked you to print. Don't sort the data unless you are told to sort the data. You should remove the "#" sign in each code chunk before writing your code. Also, if you see the comment "#DO NOT CHANGE", then I don't want you to make any modifications to that code. **You should knit your RMD file to a PDF after you answer every question.**
+
+After you are done, knit the RMarkdown file to PDF and submit the PDF to Gradescope under HW8.
+
+For this assignment, you will be working with a dataset found on Kaggle at this [link](https://www.kaggle.com/datasets/uciml/student-alcohol-consumption/?select=student-mat.csv).  You need to go to the link provided to read about what each of the variables represent. This will be important for understanding the dataset. The source of the data is also cited at this link.
+
+This data was collected for the purpose of examining the impact that student alcohol consumption has on math grades. The nice thing about this data is there are many other variables measured on these students that could potentially impact the performance in a math course. Each observation is a student and there are 395 different students listed. In the code below, I read the data into R and print out the data so you can see the content in the dataset that I named **Math**.
+
+```{r}
+Math = read.csv("student-mat.csv")
+str(Math)
+```
+
+
+# Questions
+
+### Q1 (2 Points)
+
+The first thing I want you to do is to create a response variable in the dataset **Math** called *Grade* which is the average of the three period grades *G1*, *G2*, *G3*. After you do this, you should also remove the three original period grade variables from the dataset. Use the `str()` function on the dataset **Math** to prove that your code accomplished these tasks. 
+
+```{r}
+
+```
+
+### Q2 (2 Points)
+
+Next we want to combine the alcohol related variables into a new variable called *Oalc* representing overall alcohol consumption. I want you to identify the two variables that measure workday alcohol consumption and weekend alcohol consumption. The variable *Oalc* should be the sum of these two variables. Then, remove the two original alcohol variables from the dataset and use the `str()` function to prove that this was done correctly.
+
+```{r}
+
+```
+
+
+### Q3 (4 Points)
+
+We want to find the best model to predict the new variable `Grade`. Use the appropriate function to fit all subset models up to $k=10$ where $k$ represents the number of predictors in the model and find the best model for each of those choices for $k$. Then, I want you to create model objects named **mod.adjRsq** and **mod.Cp*`** that are the linear models based off either maximizing adjusted R-squared or minimizing Mallow's Cp, respectively. Use the `summary()` function to print out the output from these two models. **For the categorical variables, if there are ANY binary indicator variables associated with those categorical variables that are significant, include the full categorical variable in the model objects. This is primarily important for variables like Mjob and Fjob where there will be multiple binary indicator variables to handle the multiple categories for Mjob and Fjob.**
+
+I only want to see the output from the `summary()` function applied to the 2 model objects.
+
+```{r}
+
+```
+
+
+### Q4 (2 Points)
+
+Now, I want you to find the best model that minimizes AIC using the forward selection algorithm seen in the code from class. Create a model object called **mod.forward** from the model identified in this algorithm and output the `summary()` function applied to this model object. In your output, I want you to suppress the step-by-step process of the forward selection algorithm. You should look at the step-by-step process to understand the process the algorithm goes through to get to the final model.
+
+The only output should be from the `summary()` function.
+
+```{r}
+
+```
+
+### Q5 (2 Points)
+
+Now, I want you to find the best model that minimizes AIC using the backward elimination algorithm seen in the code from class. Create a model object called **mod.backward** from the model identified in this algorithm and output the `summary()` function applied to this model object. In your output, I want you to suppress the step-by-step process of the backward elimination algorithm. You should look at the step-by-step process to understand the process the algorithm goes through to get to the final model.
+
+The only output should be from the `summary()` function.
+
+```{r}
+
+```
+
+### Q6 (2 Points)
+
+Now, I want you to find the best model that minimizes AIC using the stepwise regression algorithm seen in the code from class. Create a model object called **mod.stepwise** from the model identified in this algorithm and output the `summary()` function applied to this model object. In your output, I want you to suppress the step-by-step process of the stepwise regression algorithm. You should look at the step-by-step process to understand the process the algorithm goes through to get to the final model.
+
+The only output should be from the `summary()` function.
+
+```{r}
+
+```
+
+### Q7 (2 Points)
+
+Now, I want you to look at the output from the full model and create a model object called **mod.sig** which is the multiple linear regression model that only contains the significant predictor variables based on the individual t-tests for each coefficient. Then, use the `summary()` function to print out the output from this model. This should be your only output.
+
+```{r}
+
+```
+
+### Q8 (3 Points)
+
+Now, we want to present a table that summarizes the Adjusted R-squared (*AdjRSQ*) and AIC (*AIC*) for 7 models that we fit in the process of doing this assignment. You can get the adjusted r-squared from the models from the output from the summary function and you can get the AIC from the `AIC()` function applied to the model objects that you created. Replace all the NA's in the table below with the adjusted r-squared and AIC measured for each of the models listed in the table.
+
+```{r}
+Results = data.frame(Model = c("Full","Significant","Forward","Backwards","Stepwise","Adjusted R-Squared","Mallow's Cp"),
+                     AdjRSQ = c(NA,NA,NA,NA,NA,NA,NA),
+                     AIC=c(NA,NA,NA,NA,NA,NA,NA)
+                     )
+Results
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

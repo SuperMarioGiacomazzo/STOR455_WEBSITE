@@ -146,14 +146,13 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Oct 19    | <span style="color:#EF426F">Fall Break</span>      |         |          |          |
 | Oct 24   | [Correlated Predictors](Lectures/15 - Correlated Predictors.pdf)    |         | 3.5      |          |
 | | [Techniques for Choosing Predictors](Lectures/16 - Techniques for Choosing Predictors.pdf)       |   [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Techniques_for_Choosing_Predictors.zip)       | 4.2         | Ch. 4: 4-6         |
-| Oct 26   | [Comparing Two Regression Lines](Lectures/17 - Comparing Two Regression Lines.pdf)    |         | 3.3       | Ch. 3: 30, 31,48         |
-|    | [Coding Categorical Predictors](Lectures/18 - Coding Categorical Predictors.pdf)      |   [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Coding_Categorical_Predictors.zip)      |   4.5       |          |
-| | New Predictors from Old     |         |   3.4       |          |
-| Oct 31 | Testing Subsets of Predictors   |         |   3.6       | Ch. 3: 35-38,41-42          |
-|     | Cross-validation      |  zip       |   4.3       | Ch. 4: 8-9         |
+| Oct 26 | [Techniques for Choosing Predictors (Cont.)](Lectures/16 - Techniques for Choosing Predictors.pdf)       |   [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Techniques_for_Choosing_Predictors.zip)       | 4.2         | Ch. 4: 4-6         |
+| | [Comparing Two Regression Lines](Lectures/17 - Comparing Two Regression Lines.pdf)    |         | 3.3       | Ch. 3: 30, 31,48         |
+| Oct 31   | [Coding Categorical Predictors](Lectures/18 - Coding Categorical Predictors.pdf)      |   [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Coding_Categorical_Predictors.zip)      |   4.5       |          |
 | Nov 2   | **Midterm 2**      |         |          |          |
-| Nov 7   |       |         |          |          |
-| Nov 9   |       |         |          |          |
+| Nov 7 | New Predictors from Old     |         |   3.4       |          |
+| | Testing Subsets of Predictors   |  zip       |   3.6       | Ch. 3: 35-38,41-42          |
+| Nov 9    | Cross-validation      |  zip       |   4.3       | Ch. 4: 8-9         |
 | Nov 14   |       |         |          |          |
 | Nov 16   |       |         |          |          |
 | Nov 21   |       |         |          |          |
@@ -189,7 +188,7 @@ The midterms will be taken in Gradescope on the dates listed. You will have the 
 | Oct 24 |  | Q4  | |Oct 24 (3:15 PM) |
 | Oct 19  | [HW7](Homework/HW7.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW7.zip)) |  | |Oct 26 (2 PM) |
 | Oct 31 |  | Q5  | |Oct 31 (3:15 PM) |
-| Oct 26  | HW8 |  | |Nov 2 (2 PM) |
+| Oct 26  | [HW8](Homework/HW8.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW8.zip)) |  | |Nov 2 (2 PM) |
 | Nov 2  |  |  | M2 | Nov 2 (3:15 PM) |
 | |     |             |  ||
 
