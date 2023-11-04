@@ -1,0 +1,46 @@
+---
+title: "18 - New Predictors from Old"
+author: "Dr. Mario"
+date: '2023-09-11'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, warning=FALSE, message=FALSE}
+library(Stat2Data)
+data("Perch")
+head(Perch)
+```
+```{r,fig.width=3,fig.height=3}
+mod.interact = lm(Weight ~ Length * Width, data=Perch)
+summary(mod.interact)
+plot(mod.interact,which=c(1,2))
+```
+
+```{r}
+data("CO2Germany")
+head(CO2Germany)
+```
+```{r,fig.width=3,fig.height=3,warning=FALSE,message=FALSE}
+library(mosaic)
+plot(CO2~Day, data = CO2Germany)
+```
+
+```{r}
+poly2 = lm(CO2~Day + I(Day^2),data=CO2Germany)
+summary(poly2)
+```
+```{r}
+coef(poly2)
+```
+
+
+```{r}
+plot(CO2~Day, data = CO2Germany)
+curve(coef(poly2)[1]+coef(poly2)[2]*x+coef(poly2)[3]*x^2,
+      add=TRUE,col="blue",lwd=2,lty=2)
+```
+

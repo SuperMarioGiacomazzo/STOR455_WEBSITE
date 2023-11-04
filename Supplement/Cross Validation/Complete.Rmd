@@ -1,0 +1,117 @@
+---
+title: "Supplement for Lecture 21: Cross-Validation"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999) #Prevents the use of scientific notation
+
+library(leaps)
+library(Stat2Data)
+```
+
+# Load Data 
+
+```{r, message=FALSE}
+data("NCbirths")
+
+NCB = NCbirths
+
+str(NCB)
+```
+
+
+# Models Based Only on Mother's Race
+
+```{r}
+#Fit Model with Only MomRace as Predictor Variable
+mod.race.1 = lm(BirthWeightOz ~ MomRace,data=NCB)
+
+#Notice that Black is the Current Reference Category
+summary(mod.race.1) 
+
+#Confidence Intervals for Difference in Mean Birth Weight Between Each Other Race and Black
+confint(mod.race.1) 
+
+#Representation of Race Groups
+table(NCB$MomRace) 
+
+#Make Reference Category the Majority: We Can Do This Easily Since MomRace is Factor Variable
+NCB$MomRace = relevel(NCB$MomRace,ref=4) 
+
+#Refit Model (Compare to Exercise 4.13 in Textbook)
+mod.race.2 = lm(BirthWeightOz ~ MomRace,data=NCB)
+summary(mod.race.2)
+confint(mod.race.2)
+
+#Add Predictions and Residuals to Data
+NCB$Pred1 = fitted(mod.race.2)
+NCB$Res1 = residuals(mod.race.2)
+
+#Check Assumptions
+hist(NCB$Res1) #Normality?
+plot(mod.race.2,which=c(2)) #Normality?
+plot(mod.race.2, which=c(1)) #Homoscedasticity?
+boxplot(Res1~MomRace,data=NCB) #Homoscedasticity?
+
+#Plot of Model (Defaults to Boxplots since x is a Factor Variable)
+plot(x=NCB$MomRace,y=NCB$BirthWeightOz) 
+points(NCB$MomRace,NCB$Pred1,col="red",pch=17,cex=2)
+```
+
+# Model Including Weeks
+
+```{r}
+#Fit Model with Only Weeks as Predictor Variable
+mod.weeks.1 = lm(BirthWeightOz ~ Weeks,data=NCB)
+summary(mod.weeks.1)
+NCB$Pred2[!is.na(NCB$Weeks)] = fitted(mod.weeks.1)
+NCB$Res2[!is.na(NCB$Weeks)] = residuals(mod.weeks.1)
+
+#Fit Model with Weeks + MomRace as Predictor Variables
+mod.weeks.2 = lm(BirthWeightOz~ Weeks + MomRace,data=NCB)
+summary(mod.weeks.2)
+NCB$Pred3[!is.na(NCB$Weeks)] = fitted(mod.weeks.2)
+NCB$Res3[!is.na(NCB$Weeks)] = residuals(mod.weeks.2)
+
+#Fit Model to Include Interaction Variable for Slope
+mod.weeks.3 = lm(BirthWeightOz~ Weeks + MomRace + Weeks*MomRace,data=NCB)
+summary(mod.weeks.3)
+NCB$Pred4[!is.na(NCB$Weeks)] = fitted(mod.weeks.3)
+NCB$Res4[!is.na(NCB$Weeks)] = residuals(mod.weeks.3)
+
+#Visualize mod.weeks.3
+library(HelpersMG) #Helpful Function Called plot_add()
+
+plot(BirthWeightOz ~ Weeks , data=subset(NCB,MomRace=="black"))
+plot_add(Pred4 ~ Weeks , data=subset(NCB,MomRace=="black"),type="l",lwd=2)
+plot_add(BirthWeightOz ~ Weeks , data=subset(NCB,MomRace=="hispanic"),col="red")
+plot_add(Pred4 ~ Weeks , data=subset(NCB,MomRace=="hispanic"),type="l",col="red",lwd=2)
+plot_add(BirthWeightOz ~ Weeks , data=subset(NCB,MomRace=="other"),col="purple")
+plot_add(Pred4 ~ Weeks , data=subset(NCB,MomRace=="other"),type="l",col="purple",lwd=2)
+plot_add(BirthWeightOz ~ Weeks , data=subset(NCB,MomRace=="white"),col="darkgreen")
+plot_add(Pred4 ~ Weeks , data=subset(NCB,MomRace=="white"),type="l",col="darkgreen",lwd=2)
+```
+
+# Model Including Plural
+
+```{r}
+#Create Indicator Variables Manually for Plural Variable
+NCB$Twins = ifelse(NCB$Plural==2,1,0)
+NCB$Triplets = ifelse(NCB$Plural==3,1,0)
+NCB$Plural=NULL
+
+NCB2 =na.omit(NCB)
+
+#Stepwise Regression on Full Model
+mod.full = lm(BirthWeightOz ~ Weeks + MomRace + Twins + Triplets + 
+                  Weeks*MomRace+Weeks*Twins+Weeks*Triplets,data=NCB2)
+
+mod.empty = lm(BirthWeightOz ~ 1,data=NCB2)
+
+mod.step = step(mod.empty,scope=list(upper=mod.full),scale=summary(mod.empty)$sigma,direction="both")
+summary(mod.step)
+```
