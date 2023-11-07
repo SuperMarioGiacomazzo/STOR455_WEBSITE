@@ -154,7 +154,7 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Nov 7 | [Coding Categorical Predictors (Cont.)](Lectures/18 - Coding Categorical Predictors.pdf)      |   [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Coding_Categorical_Predictors.zip)      |   4.5       | 
 | | [New Predictors from Old](Lectures/19 - New Predictors From Old.pdf)     |         |   3.4       |          |
 | Nov 9  | [Testing Subsets of Predictors](Lectures/20 - Testing Subsets of Predictors.pdf)   |         |   3.6       | Ch. 3: 35-38,41-42          |
-|    | Cross-validation      |  zip       |   4.3       | Ch. 4: 8-9         |
+|    | [Cross-validation](Lectures/21 - Cross Validation.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Cross_Validation.zip)       |   4.3       | Ch. 4: 8-9         |
 | Nov 14   | One-Way ANOVA  |        | 5.1-5.4        | Ch. 5: 27, 37-38, 40         |
 |   | Confidence Intervals and Effect Sizes  |        | 5.5       |        |
 | Nov 16   | Multiple Comparisons and Fisher's LSD       |         |  5.7        |          |
@@ -194,7 +194,7 @@ The midterms will be taken in Gradescope on the dates listed. You will have the 
 | Oct 26  | [HW8](Homework/HW8.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW8.zip)) |  | |Nov 9 (2 PM) |
 | Nov 2  |  |  | M2 | Nov 2 (3:15 PM) |
 | Nov 7  | [Extra Credit](Homework/ExtraCredit_template.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/ExtraCredit.zip)) |  | |Nov 24 (5 PM) |
-| Nov 9  | HW9 |  | |Nov 16 (2 PM) |
+| Nov 9  | [HW9](Homework/HW9.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW9.zip)) |  | |Nov 16 (2 PM) |
 | Nov 14|  | Q5  | |Nov 14 (3:15 PM) |
 | Nov 16  | HW10 |  | |Nov 30 (2 PM) |
 | Nov 21|  | Q6  | |Nov 21 (3:15 PM) |

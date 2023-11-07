@@ -4,7 +4,7 @@ output:
   pdf_document: default
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE,eval=FALSE}
 #This code chunk is for modifying the global options and for loading required R packages
 knitr::opts_chunk$set(echo = TRUE)
 options(scipen=999) #Prevents the use of scientific notation
@@ -17,7 +17,7 @@ source("https://raw.githubusercontent.com/JA-McLean/STOR455/master/scripts/anova
 
 # Load Data 
 
-```{r, message=FALSE}
+```{r, message=FALSE,eval=FALSE}
 data("NCbirths")
 
 NCB = NCbirths[,-which(names(NCbirths) %in% c("ID","BirthWeightGm","RaceMom","HispMom","Low","Premie"))]
@@ -25,10 +25,11 @@ NCB = NCbirths[,-which(names(NCbirths) %in% c("ID","BirthWeightGm","RaceMom","Hi
 str(NCB)
 
 ```
+
 # Clean Data
 
-```{r}
-NCB$Plural = factor(ifelse(NCB$Plural==1,"Single",ifelse(NCB$Plural==2,"Twin","Triplet")))
+```{r,eval=FALSE}
+NCB$Plural = COMPLETE
 table(NCB$Plural)
 
 NCB$Sex = factor(ifelse(NCB$Sex==1,"Male","Female"))
@@ -49,7 +50,7 @@ str(NCB)
 
 # Fit Full Model with Interactions and without Interactions
 
-```{r}
+```{r,eval=FALSE}
 #Fit Empty Model
 empty=lm(BirthWeightOz~1,data=NCB)
 summary(empty)
@@ -65,38 +66,37 @@ summary(fullinteract)
 #plot(fullinteract,which=c(1,2)) #residuals look fine
 
 #Nested F-test to Compare Models (Increasing Complexity and Nested)
-anova(empty,full, fullinteract)
+COMPLETE
 ```
 
 # Test Different Subsets of Variables
 
-```{r}
+```{r,eval=FALSE}
 #Model without Mom's Information
 nomom = lm(BirthWeightOz~.-MomAge-Marital-Smoke-MomRace,data=NCB)
 summary(nomom)
 
 #ANOVA Tables of full and nomom Models
-anova455(full)
-anova455(nomom)
+COMPLETE
 
 
 #Hand Calculation of Nested F-Test Statistic
-SSModelfull = 309624
-SSModelreduced = 279217
-nsubset = length(coef(full)) - length(coef(nomom))
+SSModelfull = COMPLETE
+SSModelreduced = COMPLETE
+nsubset = COMPLETE
 
-Fstat = ((SSModelfull-SSModelreduced)/nsubset)/(summary(full)$sigma^2)
+Fstat = COMPLETE
 Fstat
 
 #Is any of Mom's information useful?
-anova(nomom,full)
+COMPLETE
 ```
 
 # Which Model is Best?
 
-```{r}
+```{r,eval=FALSE}
 #empty Model RMSE
-sqrt(sum((NCB$BirthWeightOz - fitted(empty))^2)/(nrow(NCB)-1))
+COMPLETE
 
 #nomom Model RMSE
 summary(nomom)$sigma
@@ -110,10 +110,10 @@ summary(fullinteract)$sigma
 
 # Use Cross Validation to Determine Which Model is Best
 
-```{r}
+```{r,eval=FALSE}
 #Randomly Choose Rows to Be in Training Data
 set.seed(216)
-train.select = sample(1:1409,size = floor(0.8*1409),replace=FALSE)
+train.select = COMPLETE
 
 #Split Data Up into Train and Test Sets
 TRAIN = NCB[train.select,]
@@ -133,16 +133,10 @@ full=lm(BirthWeightOz~.,data=TRAIN)
 fullinteract=lm(BirthWeightOz~.*.,data=TRAIN)
 
 #Calculate In-Sample RMSE for all 4 models
-sqrt(mean((TRAIN$BirthWeightOz - predict(empty))^2))
-sqrt(mean((TRAIN$BirthWeightOz - predict(nomom))^2))
-sqrt(mean((TRAIN$BirthWeightOz - predict(full))^2))
-sqrt(mean((TRAIN$BirthWeightOz - predict(fullinteract))^2))              #BEST
+COMPLETE
 
 #Calculate Out-of-Sample RMSE for all 4 models
-sqrt(mean((TEST$BirthWeightOz - predict(empty,newdata=TEST))^2))
-sqrt(mean((TEST$BirthWeightOz - predict(nomom,newdata=TEST))^2))
-sqrt(mean((TEST$BirthWeightOz - predict(full,newdata=TEST))^2))          #BEST
-sqrt(mean((TEST$BirthWeightOz - predict(fullinteract,newdata=TEST))^2))
+COMPLETE
 
 ```
 
