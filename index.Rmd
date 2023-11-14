@@ -153,15 +153,17 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Nov 2   | **Midterm 2**      |         |          |          |
 | Nov 7 | [Coding Categorical Predictors (Cont.)](Lectures/18 - Coding Categorical Predictors.pdf)      |   [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Coding_Categorical_Predictors.zip)      |   4.5       | 
 | | [New Predictors from Old](Lectures/19 - New Predictors from Old.pdf)     |         |   3.4       |          |
-| Nov 9  | [Testing Subsets of Predictors](Lectures/20 - Testing Subsets of Predictors.pdf)   |         |   3.6       | Ch. 3: 35-38,41-42          |
+| Nov 9 | [New Predictors from Old (Cont.)](Lectures/19 - New Predictors from Old.pdf)     |         |   3.4       |          |
+|  | [Testing Subsets of Predictors](Lectures/20 - Testing Subsets of Predictors.pdf)   |         |   3.6       | Ch. 3: 35-38,41-42          |
 |    | [Cross-validation](Lectures/21 - Cross Validation.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Cross_Validation.zip)       |   4.3       | Ch. 4: 8-9         |
-| Nov 14   | One-Way ANOVA  |        | 5.1-5.4        | Ch. 5: 27, 37-38, 40         |
+| Nov 14    | [Cross-validation (Cont.)](Lectures/21 - Cross Validation.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Cross_Validation.zip)       |   4.3       | Ch. 4: 8-9         |
+|| **Review of Midterm 2**      |         |           |          |
+| Nov 16   | One-Way ANOVA  |        | 5.1-5.4        | Ch. 5: 27, 37-38, 40         |
 |   | Confidence Intervals and Effect Sizes  |        | 5.5       |        |
-| Nov 16   | Multiple Comparisons and Fisher's LSD       |         |  5.7        |          |
+| Nov 21   | Multiple Comparisons and Fisher's LSD       |         |  5.7        |          |
 |  | Multiple Tests       |         |  8.2        |          |
-| Nov 21   | Two-Way ANOVA      |         | 6.3-6.5         |          |
 | Nov 23   | <span style="color:#EF426F">Thanksgiving</span>      |         |          |          |
-| Nov 28   |       |         |          |          |
+| Nov 28   | Two-Way ANOVA      |         | 6.3-6.5         |          |
 | Nov 30   |       |         |          |          |
 | Dec 5   |       |         |          |          |
 | Dec 12   | Final Exam (12PM - 3PM)     |         | Everything         |           |

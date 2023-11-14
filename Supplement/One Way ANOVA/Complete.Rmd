@@ -1,0 +1,32 @@
+---
+title: "Supplement for Lecture 21: Cross-Validation"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999) #Prevents the use of scientific notation
+
+library(Stat2Data)
+library(mosaic)
+
+```
+
+# Load Data 
+
+```{r, message=FALSE}
+Exams = read.csv("Exams4.csv")
+Exams
+```
+# Examine Average Grades of Different Exams
+
+```{r}
+table(Exams$Exam)
+
+boxplot(Grade~Exam,data=Exams)
+
+mean(Grade~Exam,data=Exams)
+sd(Grade~Exam,data=Exams)
+```
