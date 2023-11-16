@@ -199,8 +199,8 @@ The midterms will be taken in Gradescope on the dates listed. You will have the 
 | Nov 9  | [HW9](Homework/HW9.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW9.zip)) |  | |Nov 16 (2 PM) |
 | Nov 14|  | Q5  | |Nov 14 (3:15 PM) |
 | Nov 16  | HW10 |  | |Nov 30 (2 PM) |
-| Nov 21|  | Q6  | |Nov 28 (3:15 PM) |
-| Nov 28|  | Q7  | |Dec 5 (3:15 PM) |
+| Nov 28|  | Q6  | |Nov 28 (3:15 PM) |
+| Dec 5|  | Q7  | |Dec 5 (3:15 PM) |
 | |     |             |  ||
 
 # **Extra Credit Assignment**
