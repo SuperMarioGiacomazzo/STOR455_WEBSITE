@@ -158,8 +158,8 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 |    | [Cross-validation](Lectures/21 - Cross Validation.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Cross_Validation.zip)       |   4.3       | Ch. 4: 8-9         |
 | Nov 14    | [Cross-validation (Cont.)](Lectures/21 - Cross Validation.pdf)      |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Cross_Validation.zip)       |   4.3       | Ch. 4: 8-9         |
 || **Review of Midterm 2**      |         |           |          |
-| Nov 16   | One-Way ANOVA  |        | 5.1-5.4        | Ch. 5: 27, 37-38, 40         |
-|   | Confidence Intervals and Effect Sizes  |        | 5.5       |        |
+| Nov 16   | [One-Way ANOVA](Lectures/22 - One Way ANOVA.pdf)  |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/One_Way_ANOVA.zip)      | 5.1-5.4        | Ch. 5: 27, 37-38, 40         |
+|   | [Confidence Intervals and Effect Sizes](Lectures/23 - Confidence Intervals and Effect Sizes.pdf)  |        | 5.5       |          |
 | Nov 21   | Multiple Comparisons and Fisher's LSD       |         |  5.7        |          |
 |  | Multiple Tests       |         |  8.2        |          |
 | Nov 23   | <span style="color:#EF426F">Thanksgiving</span>      |         |          |          |
@@ -199,8 +199,8 @@ The midterms will be taken in Gradescope on the dates listed. You will have the 
 | Nov 9  | [HW9](Homework/HW9.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW9.zip)) |  | |Nov 16 (2 PM) |
 | Nov 14|  | Q5  | |Nov 14 (3:15 PM) |
 | Nov 16  | HW10 |  | |Nov 30 (2 PM) |
-| Nov 21|  | Q6  | |Nov 21 (3:15 PM) |
-| Nov 28|  | Q7  | |Nov 28 (3:15 PM) |
+| Nov 21|  | Q6  | |Nov 28 (3:15 PM) |
+| Nov 28|  | Q7  | |Dec 5 (3:15 PM) |
 | |     |             |  ||
 
 # **Extra Credit Assignment**

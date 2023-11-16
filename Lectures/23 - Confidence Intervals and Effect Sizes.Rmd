@@ -1,0 +1,78 @@
+---
+title: "23 - Confidence Intervals and Effect Sizes"
+author: "Dr. Mario"
+date: '2023-09-11'
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999) #Prevents the use of scientific notation
+
+library(Stat2Data)
+library(mosaic)
+```
+
+```{r, message=FALSE}
+Exams = read.csv("Exams4.csv")
+
+boxplot(Grade~Student,data=Exams)
+points(tapply(Exams$Grade, Exams$Student, mean),
+       col="red",pch=16,cex=1.5)
+abline(h=mean(Exams$Grade),lty=2,lwd=2,col="blue")
+
+```
+
+```{r}
+amodS = aov(Grade~Student,data=Exams)
+summary(amodS)
+```
+
+```{r}
+out = summary(amodS)
+
+ybars = tapply(Exams$Grade,Exams$Student,mean)
+t.value = qt(0.975,amodS$df.residual)
+MSE = out[[1]][2,3]
+counts = tapply(Exams$Grade,Exams$Student,length)
+
+Lower = ybars-t.value*sqrt(MSE/counts)
+Upper = ybars+t.value*sqrt(MSE/counts)
+
+data.frame(Lower,Upper)
+
+
+```
+
+```{r}
+diff = (ybars[1]-ybars[2])
+lower = round(diff-t.value*sqrt(MSE/counts[1]+MSE/counts[2]),2)
+upper = round(diff+t.value*sqrt(MSE/counts[1]+MSE/counts[2]),2)
+
+paste("(",lower,",",upper,")",sep="")
+```
+
+```{r}
+diff = (ybars[1]-ybars[5])
+lower = round(diff-t.value*sqrt(MSE/counts[1]+MSE/counts[5]),2)
+upper = round(diff+t.value*sqrt(MSE/counts[1]+MSE/counts[5]),2)
+
+paste("(",lower,",",upper,")",sep="")
+```
+
+```{r}
+MSE = out[[1]][2,3]
+RMSE = sqrt(MSE)
+RMSE
+```
+
+```{r}
+(ybars[5]-mean(Exams$Grade))
+(ybars[5]-mean(Exams$Grade))/RMSE
+```
+
+
+
+

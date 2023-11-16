@@ -23,14 +23,12 @@ Exams
 
 # Examine Average Grades of Different Exams
 
-```{r}
+```{r,eval=F}
 # Overall Statistics of Grade
-overall = c(length(Exams$Grade),mean(Exams$Grade),sd(Exams$Grade))
+COMPLETE
 
 # Group Statistics of Grade
-length=tapply(Exams$Grade, Exams$Exam, length)
-average=tapply(Exams$Grade, Exams$Exam, mean)
-st.dev=tapply(Exams$Grade, Exams$Exam, sd)
+COMPLETE
 
 # Create Table
 rbind(cbind(length,average,st.dev),overall)
@@ -42,33 +40,25 @@ points(average,col="red",pch=16,cex=2)
 
 # ANOVA For Testing Differences in Mean Grades for the Different Exams
 
-```{r}
+```{r,eval=F}
 # Visual
 plot(Grade ~ Exam, data = Exams)
 points(average, col="red", pch=16,cex=1.5)
-abline(h = mean(Exams$Grade), col = "blue",lty=2,lwd=3)
 
 # SST vs SSE vs SSGroups
-SST = sum((Exams$Grade-overall[2])^2)
-SST
-
-SSE = sum((Exams$Grade - rep(average,5))^2)
-SSE
-
-SSGroups = SST-SSE
-SSGroups
+COMPLETE
 
 #ANOVA F-test
-amodG = aov(Grade~factor(Exam),data=Exams)
+amodG = COMPLETE
 summary(amodG)
 ```
 
 # Checking Assumptions
 
-```{r}
+```{r,eval=F}
 plot(amodG) #Check Plots of Residuals
 
 tapply(Exams$Grade, Exams$Exam, sd) #Is Largest More than Double Smallest
-23.24>2*13.93
+COMPLETE
 ```
 
