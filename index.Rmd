@@ -160,8 +160,9 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 || **Review of Midterm 2**      |         |           |          |
 | Nov 16   | [One-Way ANOVA](Lectures/22 - One Way ANOVA.pdf)  |  [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/One_Way_ANOVA.zip)      | 5.1-5.4        | Ch. 5: 27, 37-38, 40         |
 |   | [Confidence Intervals and Effect Sizes](Lectures/23 - Confidence Intervals and Effect Sizes.pdf)  |        | 5.5       |          |
-| Nov 21   | Multiple Comparisons and Fisher's LSD       |         |  5.7        |          |
-|  | Multiple Tests       |         |  8.2        |          |
+| Nov 21   | [Confidence Intervals and Effect Sizes (Cont.)](Lectures/23 - Confidence Intervals and Effect Sizes.pdf)  |        | 5.5       |          |
+| | [Multiple Comparisons and Fisher's LSD](Lectures/24 - Multiple Comparisons and Fisher's LSD.pdf)      |         |  5.7        | Ch. 5: 45, 47, 62, 64          |
+|  | [Multiple Tests](Lectures/25 - Multiple Tests.pdf)      |         |  8.2        | Ch. 8: 10, 13         |
 | Nov 23   | <span style="color:#EF426F">Thanksgiving</span>      |         |          |          |
 | Nov 28   | Two-Way ANOVA      |         | 6.3-6.5         |          |
 | Nov 30   |       |         |          |          |

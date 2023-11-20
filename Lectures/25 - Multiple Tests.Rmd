@@ -1,0 +1,67 @@
+---
+title: "25 - Multiple Tests"
+author: "Dr. Mario"
+date: '2023-09-11'
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999) #Prevents the use of scientific notation
+
+library(Stat2Data)
+library(mosaic)
+```
+
+```{r, message=FALSE}
+Exams = read.csv("Exams4.csv")
+
+amodS = aov(Grade~Student,data=Exams)
+summary(amodS)
+```
+
+```{r}
+t_LSD = qt(1 - 0.05/2, amodS$df.residual)
+MSE = summary(amodS)[[1]][2,3]
+LSD = t_LSD * sqrt(MSE)*sqrt(1/4 + 1/4)
+round(LSD,2)
+```
+
+```{r}
+tapply(Exams$Grade,Exams$Student,mean)
+abs(c(75,91,79,83)-47)
+```
+
+```{r}
+pairwise.t.test(Exams$Grade, Exams$Student, p.adj = 'none')
+```
+```{r}
+t_Bon = qt(1 - (0.05/10)/2, amodS$df.residual)
+Bon = t_Bon * sqrt(MSE)*sqrt(1/4 + 1/4)
+round(Bon,2)
+```
+
+```{r}
+pairwise.t.test(Exams$Grade, Exams$Student, p.adj = 'bonf')
+```
+
+```{r}
+t_Tukey = qtukey(p= 1 - 0.05,
+                 nmeans=5, 
+                 df=amodS$df.residual)
+HSD = t_Tukey/sqrt(2) * sqrt(MSE)*sqrt(1/4 + 1/4)
+round(HSD,2)
+```
+
+```{r}
+TukeyHSD(amodS)
+```
+```{r}
+par(mar=c(4,7,3,1))  #Adjusts Plot Margins 
+hsd = TukeyHSD(amodS) #Save Output from TukeyHSD()
+plot(hsd,las=2) #Plot Output from TukeyHSD()
+par(mar=c(5,4,4,2)) #Revert Back to Default Margins
+```
+
