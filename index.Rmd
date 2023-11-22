@@ -162,11 +162,11 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 |   | [Confidence Intervals and Effect Sizes](Lectures/23 - Confidence Intervals and Effect Sizes.pdf)  |        | 5.5       |          |
 | Nov 21   | [Confidence Intervals and Effect Sizes (Cont.)](Lectures/23 - Confidence Intervals and Effect Sizes.pdf)  |        | 5.5       |          |
 | | [Multiple Comparisons and Fisher's LSD](Lectures/24 - Multiple Comparisons and Fisher's LSD.pdf)      |         |  5.7        | Ch. 5: 45, 47, 62, 64          |
-|  | [Multiple Tests](Lectures/25 - Multiple Tests.pdf)      |         |  8.2        | Ch. 8: 10, 13         |
 | Nov 23   | <span style="color:#EF426F">Thanksgiving</span>      |         |          |          |
-| Nov 28   | Two-Way ANOVA      |         | 6.3-6.5         |          |
-| Nov 30   |       |         |          |          |
-| Dec 5   |       |         |          |          |
+| Nov 28 | [Multiple Tests](Lectures/25 - Multiple Tests.pdf)      |         |  8.2        | Ch. 8: 10, 13         |
+|  | Two-Way ANOVA      | zip        | 6.3-6.5         |          |
+| Nov 30   | Logistic Regression      | zip   | 9.1-9.4  | Ch. 9: 21, 33, 35-37          | 
+| Dec 5   | Multiple Logistic Regression       | zip       | 10.1-10.4          | Ch. 10: 19, 23-24    |
 | Dec 12   | Final Exam (12PM - 3PM)     |         | Everything         |           |
 |   |     |             |  | |    |    
 
@@ -199,7 +199,7 @@ The midterms will be taken in Gradescope on the dates listed. You will have the 
 | Nov 7  | [Extra Credit](Homework/ExtraCredit_template.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/ExtraCredit.zip)) |  | |Nov 24 (5 PM) |
 | Nov 9  | [HW9](Homework/HW9.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW9.zip)) |  | |Nov 16 (2 PM) |
 | Nov 14|  | Q5  | |Nov 14 (3:15 PM) |
-| Nov 16  | HW10 |  | |Nov 30 (2 PM) |
+| Nov 16  | [HW10](Homework/HW10.pdf)([.zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/HW10.zip)) |  | |Nov 30 (2 PM) |
 | Nov 28|  | Q6  | |Nov 28 (3:15 PM) |
 | Dec 5|  | Q7  | |Dec 5 (3:15 PM) |
 | |     |             |  ||
@@ -213,6 +213,8 @@ The movie Marvels will be released in theaters on November 10. You will be predi
 Reward for everyone: Every student who participates in this extra credit assignment will get a 1% bump to their final grades after curving. This assumes you followed all instructions and made a legitimate effort to conduct your an analysis to defend your prediction. If you provide a prediction but don't have analysis or argument that agrees with that prediction, I will consider this a violation of the Honor Code. 
 
 Reward for some: The 5 teams with the most accurate prediction, measured based off the absolute value, will receive an additional 0.5% bump to their final grades after curving. This leads to a 1.5% total curve. This assumes you followed all instructions and made a legitimate effort to conduct your analysis to defend your prediction. If you are accurate, but your prediction comes from either a guess or is not defended based off your work, you will not be eligible for any extra credit including the 1% and the 0.5% bonus. In case of a tie where 2 or more teams achieve the exact same accuracy, the team (all group members) that submits their prediction the earliest will rank higher. 
+
+Reward for Achievement: If our class predicts better than the other 455 class, every student who participates in this extra credit assignment will get a 0.5% bump to their final grades.
 
 To complete this, you will need to download the RMD template [here](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Homework/ExtraCredit.zip) and knit the completed document to a PDF. In this RMD template, you will need to enter a team name  and list the name and PID of each member of your team. You will also need to edit the RMD file to enter your prediction (one number only). Then, you will need to provide the code you wrote, show output of the data you used, show all the methods/models you considered to get to this prediction. Finally, in 1 paragraph, I would like you to summarize the work you did that led to the exact prediction you made. In this paragraph, I want to know why you think your actual prediction is the "best" or "most accurate".  
 
