@@ -1,0 +1,78 @@
+
+
+---
+title: "Supplement for Lecture 27: Logistic Regression"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999) #Prevents the use of scientific notation
+
+library(Stat2Data)
+library(mosaic)
+```
+
+# Load Data
+
+```{r,message=FALSE}
+#Load and Preview Data
+data(Putts1)
+head(Putts1)
+
+#Inspect Data
+nrow(Putts1)
+table(Putts1$Made,Putts1$Length)
+```
+
+# Plot of Raw Data
+
+```{r}
+plot(Putts1$Length,Putts1$Made,pch=16)
+abline(lm(Made~Length,data=Putts1),lty=4,lwd=2,col="red")
+```
+
+# Plot of Summarized Data
+
+```{r}
+tapply(Putts1$Made,Putts1$Length,FUN=mean)
+
+Putts.Summary=data.frame(Length=3:7,Prob=tapply(Putts1$Made,Putts1$Length,FUN=mean))
+
+plot(Putt.Summary$Length,Putt.Summary$Prob,pch=16,ylim=c(0,1),xlim=c(0,14))
+abline(lm(Prob~Length,data=Putts.Summary),lty=4,lwd=2,col="red")
+```
+
+# Logistic Regression Model
+
+```{r}
+putt.mod = glm(Made~Length,family=binomial,data=Putts1)
+summary(putt.mod)
+
+b0 = as.numeric(coef(putt.mod)[1])
+b1 = as.numeric(coef(putt.mod)[2])
+
+
+
+```
+
+# Visualization of Logistic Regression Model
+
+```{r}
+putt.mod = glm(Made~Length,family=binomial,data=Putts1)
+summary(putt.mod)
+
+b0 = as.numeric(coef(putt.mod)[1])
+b1 = as.numeric(coef(putt.mod)[2])
+
+plot(Made~Length,data=Putts1,pch=16)
+curve(exp(b0+b1*x)/(1+exp(b0+b1*x)),col="red",add=TRUE)
+
+plot(Prob~Length,data=Putts.Summary,pch=16,ylim=c(0,1),xlim=c(0,14))
+curve(exp(b0+b1*x)/(1+exp(b0+b1*x)),col="red",add=TRUE)
+abline(h=c(0,1),lwd=2,col="blue",lty=4)
+```
+
+# daf
