@@ -1,0 +1,75 @@
+---
+title: "Supplement for Lecture 26: Two-Way ANOVA"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999) #Prevents the use of scientific notation
+
+library(Stat2Data)
+library(mosaic)
+```
+
+```{r,message=FALSE}
+Exams = read.csv("Exams4.csv")
+Exams
+```
+
+```{r,eval=FALSE}
+amodExam = aov(Grade~factor(Exam),data=Exams)
+amodStudent = aov(Grade~Student,data=Exams)
+COMPLETE
+```
+
+```{r,eval=FALSE}
+summary(amodExam)
+summary(amodStudent)
+COMPLETE
+```
+
+```{r,eval=FALSE}
+COMPLETE
+```
+
+```{r,eval=FALSE}
+COMPLETE
+```
+
+```{r,eval=FALSE}
+glue= read.csv("Glue.csv")
+glue
+
+#Check if Balanced
+COMPLETE
+
+#Interaction Plots (Mean)
+COMPLETE
+
+#Check Homoscedasticity
+COMPLETE
+```
+
+
+```{r,eval=FALSE}
+#One-Way ANOVA
+THICK = aov(Force~Thickness,data=glue)
+summary(THICK)
+
+TYPE = aov(Force~Type,data=glue)
+summary(TYPE)
+
+#Two-Way ANOVA
+BOTH = aov(Force~Thickness+Type,data=glue)
+summary(BOTH)
+
+#Two-Way ANOVA with Interaction
+COMPLETE
+```
+
+```{r,eval=FALSE}
+COMPLETE
+```
+

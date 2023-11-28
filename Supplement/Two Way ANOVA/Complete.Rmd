@@ -1,0 +1,82 @@
+---
+title: "Supplement for Lecture 26: Two-Way ANOVA"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999) #Prevents the use of scientific notation
+
+library(Stat2Data)
+library(mosaic)
+```
+
+```{r,message=FALSE}
+Exams = read.csv("Exams4.csv")
+Exams
+```
+
+```{r}
+amodExam = aov(Grade~factor(Exam),data=Exams)
+amodStudent = aov(Grade~Student,data=Exams)
+amodBoth = aov(Grade~factor(Exam)+Student,data=Exams)
+```
+
+```{r}
+summary(amodExam)
+summary(amodStudent)
+summary(amodBoth)
+```
+
+```{r}
+TukeyHSD(amodBoth)
+```
+
+```{r}
+par(mar=c(4,7,3,1))
+hsd=TukeyHSD(amodBoth)
+plot(hsd,las=2)
+par(mar=c(5,4,2,2))
+```
+
+```{r, message=FALSE}
+glue= read.csv("Glue.csv")
+glue
+
+#Check if Balanced
+table(glue$Thickness,glue$Type)
+
+#Interaction Plots (Mean)
+interaction.plot(glue$Type, glue$Thickness, glue$Force)
+interaction.plot(glue$Thickness, glue$Type, glue$Force)
+
+#Check Homoscedasticity
+interaction.plot(glue$Type, glue$Thickness, glue$Force,fun=sd)
+interaction.plot(glue$Thickness, glue$Type, glue$Force, fun=sd)
+```
+
+
+```{r}
+#One-Way ANOVA
+THICK = aov(Force~Thickness,data=glue)
+summary(THICK)
+
+TYPE = aov(Force~Type,data=glue)
+summary(TYPE)
+
+#Two-Way ANOVA
+BOTH = aov(Force~Thickness+Type,data=glue)
+summary(BOTH)
+
+#Two-Way ANOVA with Interaction
+INTERACT = aov(Force~Thickness*Type,data=glue)
+summary(INTERACT)
+plot(INTERACT,1:2)
+```
+
+```{r}
+TukeyHSD(INTERACT)[[3]]
+```
+
