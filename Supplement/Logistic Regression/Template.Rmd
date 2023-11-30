@@ -15,46 +15,44 @@ library(mosaic)
 
 # Load Data
 
-```{r,message=FALSE}
+```{r,message=FALSE,eval=FALSE}
 #Load and Preview Data
 data(Putts1)
 head(Putts1)
 
 #Inspect Data
-nrow(Putts1)
-table(Putts1$Made,Putts1$Length)
+COMPLETE
 ```
 
 # Plot of Raw Data
 
-```{r}
+```{r,eval=FALSE}
 plot(Putts1$Length,Putts1$Made,pch=16)
 abline(lm(Made~Length,data=Putts1),lty=4,lwd=2,col="red")
 ```
 
 # Plot of Summarized Data
 
-```{r}
-tapply(Putts1$Made,Putts1$Length,FUN=mean)
+```{r,eval=FALSE}
+COMPLETE
 
-Putts.Summary=data.frame(Length=3:7,Prob=tapply(Putts1$Made,Putts1$Length,FUN=mean))
+Putts.Summary=data.frame(Length=3:7,Prob=COMPLETE)
 
-plot(Putts.Summary$Length,Putts.Summary$Prob,pch=16,ylim=c(0,1),xlim=c(0,14))
-abline(lm(Prob~Length,data=Putts.Summary),lty=4,lwd=2,col="red")
+COMPLETE
 ```
 
 # Logistic Regression Model
 
-```{r}
-putt.mod = glm(Made~Length,family=binomial,data=Putts1)
+```{r,eval=FALSE}
+putt.mod = COMPLETE
 summary(putt.mod)
 ```
 
 # Visualization of Logistic Regression Model
 
-```{r}
-b0 = as.numeric(coef(putt.mod)[1])
-b1 = as.numeric(coef(putt.mod)[2])
+```{r,eval=FALSE}
+COMPLETE
+COMPLETE
 
 plot(jitter(Made,amount=0.1)~Length,data=Putts1,pch=16)
 curve(exp(b0+b1*x)/(1+exp(b0+b1*x)),col="red",add=TRUE)
@@ -67,9 +65,9 @@ abline(h=0.5,lwd=2, col="orange",lty=2)
 
 # Comparing Sample Proportions to Estimated Probabilities
 
-```{r}
-prop=as.numeric(tapply(Putts1$Made,Putts1$Length,FUN=mean))
-prob=as.numeric(predict(putt.mod,type="response",newdata=data.frame(Length=3:7)))
+```{r,eval=FALSE}
+prop=COMPLETE
+prob=COMPLETE
 
 OUT = data.frame(Length=3:7,Proportion = prop, Probability=prob)
 OUT
@@ -78,13 +76,12 @@ OUT
 
 # Odds 
 
-```{r}
+```{r,eval=FALSE}
 #Calculate using Formula
-OUT$Odds = OUT$Probability/(1-OUT$Probability)
-OUT
+OUT$Odds = COMPLETE
 
 #Calculate using Predict Function
-exp(predict(putt.mod,newdata=data.frame(Length=3:7)))
+COMPLETE
 
 #Plot log(odds) vs Length
 plot(x=OUT$Length,y=log(OUT$Odds),pch=16)
@@ -93,7 +90,7 @@ abline(a=b0,b=b1,col="red")
 
 # Odds Ratios
 
-```{r}
+```{r,eval=FALSE}
 #Compare 3ft Putts to 7ft Putts
 exp(b0+b1*3)/exp(b0+b1*7)
 
@@ -105,28 +102,25 @@ Interpretation: The odds of making a 3ft putt is 9.63 times the odds of making a
 
 # Relationship to Slope of Line
 
-```{r}
+```{r,eval=FALSE}
 #Compare 4ft Putts to 3ft Putts
-exp(b0+b1*4)/exp(b0+b1*3)
+COMPLETE
 
 #Compare 7ft Putts to 6ft Putts
-exp(b0+b1*7)/exp(b0+b1*6)
+COMPLETE
 
 #Calculate Slope From Odds Ratio
-log(0.5677116)
-b1
+COMPLETE
 
 #Notice the difference here
-exp(b0+b1*7)
-exp(b0+b1*6)*exp(b1)
+COMPLETE
 ```
 
 Notice: For every one unit increase in X, the odds of success increases by a factor of e^b1
 
 #Empirical Logit Plot
 
-```{r}
-OUT$EmpiricalLogit = log(OUT$Proportion/(1-OUT$Proportion))
-plot(x=OUT$Length,y=OUT$EmpiricalLogit,pch=16)
+```{r,eval=FALSE}
+COMPLETE
 ```
 

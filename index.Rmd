@@ -165,7 +165,8 @@ Review of basic inference; two-sample comparisons; correlation; introduction to 
 | Nov 23   | <span style="color:#EF426F">Thanksgiving</span>      |         |          |          |
 | Nov 28 | [Multiple Tests](Lectures/25 - Multiple Tests.pdf)      |         |  8.2        | Ch. 8: 10, 13         |
 |  | [Two-Way ANOVA](Lectures/26 - Two Way ANOVA.pdf)       | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Two_Way_ANOVA.zip)         | 6.3-6.5, 7.3-7.6         | Ch.6: 38 & Ch.7: 34         |
-| Nov 30   | Logistic Regression      | zip   | 9.1-9.4  | Ch. 9: 21, 33, 35-37          | 
+| Nov 30  | [Two-Way ANOVA (Cont.)](Lectures/26 - Two Way ANOVA.pdf)       | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Two_Way_ANOVA.zip)         | 6.3-6.5, 7.3-7.6         | Ch.6: 38 & Ch.7: 34         |
+| | [Logistic Regression](Lectures/27 - Logistic Regression.pdf)      | [zip](https://github.com/SuperMarioGiacomazzo/STOR455_WEBSITE/raw/main/Supplement/Logistic_Regression.zip)   | 9.1-9.4  | Ch. 9: 21, 33, 35-37          | 
 | Dec 5  | Logistic Regression (Cont.)      | zip   | 9.1-9.4  | Ch. 9: 21, 33, 35-37          | 
 | Dec 12   | Final Exam (12PM - 3PM)     |         | Everything         |           |
 |   |     |             |  | |    |    
