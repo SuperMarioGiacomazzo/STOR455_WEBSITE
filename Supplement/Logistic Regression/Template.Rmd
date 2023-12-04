@@ -124,3 +124,49 @@ Notice: For every one unit increase in X, the odds of success increases by a fac
 COMPLETE
 ```
 
+# Hypothesis Test and CI for Slope
+
+```{r}
+library(MASS)
+
+#Notice z value and p-value
+summary(putt.mod)
+COMPLETE
+COMPLETE
+
+#Acquire CI for Slope
+SE.b1=summary(putt.mod)$coefficients[2,2]
+b1-1.96*SE.b1
+b1+1.96*SE.b1
+COMPLETE #Incorrect (Different Formula for Standard Error of Slope)
+COMPLETE #Correct
+
+#Create CI for Odds Ratio
+COMPLETE
+```
+
+# Likelihood Ratio Test
+
+```{r}
+G.stat = COMPLETE #Difference in Deviance
+G.stat
+
+df.G.stat = COMPLETE #Difference in Degrees of Freedom
+df.G.stat
+
+pvalue = COMPLETE #area to right in chi-square distribution
+pvalue
+```
+
+# Probabilities of Likelihood
+
+```{r}
+#Full Deck
+(1/52)*(1/51)
+
+#Euchre Deck
+(1/24)*(1/23)
+
+#Red Deck
+(1/26)*(1/25)
+```

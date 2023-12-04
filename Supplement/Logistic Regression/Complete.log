@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.31)  30 NOV 2023 04:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.7.31)  4 DEC 2023 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -659,29 +659,29 @@ File: Complete_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type pdf
 )
 <use Complete_files/figure-latex/unnamed-chunk-10-1.pdf>
 Package pdftex.def Info: Complete_files/figure-latex/unnamed-chunk-10-1.pdf  us
-ed on input line 432.
+ed on input line 433.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[7] [8 <./Complete_files/figure-latex/unnamed-chunk-10-1.pdf>] (Complete.aux) )
- 
+[7] [8 <./Complete_files/figure-latex/unnamed-chunk-10-1.pdf>] [9] [10] (Comple
+te.aux) ) 
 Here is how much of TeX's memory you used:
- 13744 strings out of 478343
- 223200 string characters out of 2834742
- 558586 words of memory out of 3000000
- 31888 multiletter control sequences out of 15000+600000
+ 13762 strings out of 478343
+ 223489 string characters out of 2834742
+ 561786 words of memory out of 3000000
+ 31896 multiletter control sequences out of 15000+600000
  498879 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,5n,81p,1007b,631s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc
-}{C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc
-}<C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12
-.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-r10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmr17.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/lm/lmtt10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmtti10.pfb>
-Output written on Complete.pdf (8 pages, 209447 bytes).
+{C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
+m-ts1.enc}{C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
+lm-ec.enc}<C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+lm/lmbx12.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmr10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmr17.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmtt10.pfb><C:/Users/mgiac/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmtti10.pfb>
+Output written on Complete.pdf (10 pages, 218667 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 16487 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 16519 words of extra memory for PDF output out of 17280 (max. 10000000)
 

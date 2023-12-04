@@ -123,10 +123,59 @@ exp(b0+b1*6)*exp(b1)
 
 Notice: For every one unit increase in X, the odds of success increases by a factor of e^b1
 
-#Empirical Logit Plot
+# Empirical Logit Plot
 
 ```{r}
 OUT$EmpiricalLogit = log(OUT$Proportion/(1-OUT$Proportion))
 plot(x=OUT$Length,y=OUT$EmpiricalLogit,pch=16)
+
+lm(EmpiricalLogit~Length,data=OUT)
+glm(Made~Length,data=Putts1,family="binomial")
+```
+# Hypothesis Test and CI for Slope
+
+```{r}
+library(MASS)
+
+#Notice z value and p-value
+summary(putt.mod)
+-0.56614/0.06747
+2*(1-pnorm(abs(-8.391)))
+
+#Acquire CI for Slope
+SE.b1=summary(putt.mod)$coefficients[2,2]
+b1-1.96*SE.b1
+b1+1.96*SE.b1
+confint(putt.mod) #Incorrect (Different Formula for Standard Error of Slope)
+confint.default(putt.mod) #Correct
+
+#Create CI for Odd Ratio
+exp(confint.default(putt.mod))
+```
+
+# Likelihood Ratio Test
+
+```{r}
+G.stat = summary(putt.mod)$null.deviance-summary(putt.mod)$deviance #Difference in Deviance
+G.stat
+
+df.G.stat = summary(putt.mod)$df.null - summary(putt.mod)$df.residual #Difference in Degrees of Freedom
+df.G.stat
+
+pvalue = 1-pchisq(G.stat,df=df.G.stat) #area to right in chi-square distribution
+pvalue
+```
+
+# Probabilities of Likelihood
+
+```{r}
+#Full Deck
+(1/52)*(1/51)
+
+#Euchre Deck
+(1/24)*(1/23)
+
+#Red Deck
+(1/26)*(1/25)
 ```
 
